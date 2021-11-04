@@ -1,0 +1,342 @@
+/*------------------------------------------------------------------
+[Table of contents]
+This file include css code for each section or custom css for element in each section and each page.
+
+-------------------------------------------------------------------*/
+section {
+  background-position: center center; }
+
+.story-section {
+  background-image: url("../images/background/bg1.jpg"); }
+  .story-section .des {
+    color: #c9c9c9;
+    margin-top: 20px; }
+  .story-section .swin-btn {
+    margin-top: 30px; }
+
+.reservation-section-01 {
+  background-image: url("../images/background/bg2.jpg");
+  background-size: cover; }
+
+.product-sesction-01 {
+  background-image: url("../images/background/bg3.jpg");
+  background-position: center right;
+  background-size: cover;
+  padding-top: 100px; }
+
+.testimonial-section-01 {
+  background-image: url("../images/background/bg4.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover; }
+
+.gallery-section-01 {
+  background-color: #1d1b20; }
+
+.subscribe-section {
+  position: relative;
+  background-color: #fcfcfc; }
+  .subscribe-section .img-subscribe {
+    position: absolute;
+    width: 230px;
+    bottom: 0;
+    z-index: 1; }
+
+.about-us-session {
+  position: relative; }
+  .about-us-session > .img {
+    position: absolute;
+    bottom: 0; }
+  .about-us-session p.des.font-bold {
+    font-size: 15px;
+    color: #29272e;
+    margin-bottom: 15px; }
+  .about-us-session p.des {
+    color: #616f7d; }
+  .about-us-session .swin-sc-iconbox {
+    margin-top: 25px; }
+
+.reservation-section-02 {
+  background-color: #090909;
+  position: relative; }
+  .reservation-section-02 .video-wrapper {
+    background-image: url("../images/background/bg6.jpg");
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50%;
+    background-size: cover;
+    height: 565px; }
+    .reservation-section-02 .video-wrapper .swin-sc-video {
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.3); }
+  .reservation-section-02 .img-deco {
+    position: absolute;
+    bottom: -7%;
+    left: 0;
+    width: 20%; }
+
+.team-section-02 {
+  position: relative;
+  background-image: url("../images/background/bg7.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover; }
+  .team-section-02 .img-chef img {
+    position: absolute;
+    bottom: 0;
+    left: 60%; }
+
+.testimonial-section-02 {
+  position: relative; }
+  .testimonial-section-02 .img-left {
+    left: -351px; }
+  .testimonial-section-02 .img-right {
+    right: -200px;
+    top: 0; }
+
+.blog-section-02 {
+  background-image: url("../images/background/bg8.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.subscribe-section-02 {
+  background-color: #fcfcfc; }
+
+.img-bg {
+  position: absolute; }
+
+.blog-section-02 {
+  position: relative; }
+  .blog-section-02 .img-left {
+    left: 0;
+    left: -100px;
+    top: -118px; }
+  .blog-section-02 .img-right {
+    right: -57px;
+    top: -78px; }
+
+.counter-section-03 {
+  position: relative;
+  background-color: #f8f8f8; }
+  .counter-section-03 .img-left {
+    width: 300px;
+    left: -130px;
+    top: 50%;
+    margin-top: -110px; }
+  .counter-section-03 .img-right {
+    right: -142px;
+    top: -116px; }
+
+.banner-section .content-wrapper {
+  text-align: center; }
+  .banner-section .content-wrapper .heading-title {
+    color: #ffffff; }
+  .banner-section .content-wrapper .text-large {
+    color: #f15f2a;
+    font-size: 40px;
+    padding: 0 10px; }
+  .banner-section .content-wrapper .des {
+    color: #f8f8f8; }
+
+.video-section-03 {
+  background-image: url("../images/background/video-bg.jpg"); }
+
+.partner-section-03 {
+  padding-top: 0; }
+  .partner-section-03 .swin-sc-partner {
+    border-top: 1px solid #dddddd; }
+    .partner-section-03 .swin-sc-partner .main-slider {
+      padding-top: 45px; }
+
+.ab-testimonial-section {
+  position: relative;
+  background-color: #0d0802;
+  background-image: url("../images/background/bg7.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover; }
+  .ab-testimonial-section .img-left {
+    bottom: 0; }
+
+.menu-banner-section {
+  background-color: #323234;
+  background-image: url("../images/background/black-bg.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative; }
+  .menu-banner-section .heading-title {
+    font-family: "rancho"; }
+  .menu-banner-section .img-left {
+    left: 15%; }
+  .menu-banner-section .img-right {
+    right: 0;
+    bottom: 0; }
+  .menu-banner-section .swin-btn {
+    margin-top: 28px; }
+
+.map-section {
+  padding-top: 0; }
+
+/* HomePage 2 */
+.blog-section-02 {
+  margin-bottom: 100px; }
+
+.blog-section-02 .swin-sc.swin-sc-blog-slider {
+  margin-bottom: -100px; }
+
+/* Home Page 3 */
+.reservation-section-03 {
+  position: relative; }
+  .reservation-section-03 .img-deco {
+    position: absolute;
+    height: 560px;
+    width: auto;
+    bottom: 0;
+    left: -100px; }
+    .reservation-section-03 .img-deco img {
+      height: 100%; }
+
+.product-sesction-03-1 {
+  position: relative;
+  background-image: url("../images/background/bg1_0.jpg"); }
+  .product-sesction-03-1 .img-decorate {
+    position: absolute;
+    top: 100px;
+    width: 47%; }
+
+.form-pos-02 {
+  border: 4px solid #dfdfdf;
+  padding: 40px;
+  position: relative; }
+  .form-pos-02 .img-deco {
+    position: absolute;
+    height: 560px;
+    width: auto;
+    bottom: 0;
+    left: -100px; }
+    .form-pos-02 .img-deco img {
+      height: auto; }
+
+/* About */
+.page-title.page-about {
+  background-image: url("../images/background/pagetitle-about.jpg"); }
+
+/* Menu */
+.page-title.page-menu {
+  background-image: url("../images/background/pagetitle-menu.jpg"); }
+
+/* Reservation */
+.page-title.page-reservation {
+  background-image: url("../images/background/pagetitle-reservation.jpg"); }
+
+/* Contact */
+.page-title.page-contact {
+  background-image: url("../images/background/pagetitle-about.jpg"); }
+
+/* Blog */
+.page-title.page-blog {
+  background-image: url("../images/background/pagetitle-blog.jpg"); }
+
+/* Product */
+.page-title.page-product {
+  background-image: url("../images/background/pagetitle-product.jpg"); }
+
+h3.title-demo {
+  width: 50%;
+  margin: 0 auto 60px;
+  padding-bottom: 10px;
+  text-align: center;
+  font-size: 40px;
+  border-bottom: 2px dashed #cacaca; }
+
+h3.title-demo.light {
+  color: #fff; }
+
+.section-dark {
+  background-color: #000; }
+
+/* Reservation */
+.section-reservation-form {
+  position: relative; }
+  .section-reservation-form .section-deco {
+    position: absolute;
+    right: -150px;
+    top: 150px; }
+
+.reservation-form {
+  border: 4px solid #dfdfdf;
+  padding: 40px 5%; }
+
+.reservation-form-title {
+  color: #505b65; }
+
+.section-reservation-service {
+  background-image: url("../images/background/reservation-bg-01.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover; }
+
+body.layout-boxed {
+  background-image: url("../images/background/layout-boxed.jpg"); }
+
+/* Fullpage */
+#fullpage .section {
+  background-size: cover; }
+
+#fullpage #section2 {
+  background-image: url("../images/slider/slider1-bg1.jpg");
+  background-size: cover; }
+
+#fp-nav ul li .fp-tooltip {
+  color: #555;
+  font-family: 'Merriweather Sans', sans-serif; }
+
+#fullpage .nav-light {
+  position: relative; }
+  #fullpage .nav-light:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); }
+
+body[nav-color="light"] #fp-nav ul li a span,
+body[nav-color="light"] .fp-slidesNav ul li a span {
+  background: #eaeaea; }
+
+body[nav-color="light"] #fp-nav ul li .fp-tooltip {
+  color: #fff; }
+
+.st-fullpage .ft-fixed-area .reservation-box {
+  top: 0; }
+
+.st-fullpage .ft-widget-area {
+  margin-left: 5%; }
+
+.st-fullpage .st-menu {
+  height: 100vh; }
+
+/* Home Shop */
+.shop-banner {
+  position: relative;
+  background-image: url("../images/background/shop-banner-bg2.jpg");
+  background-size: cover;
+  padding: 80px 0; }
+  .shop-banner:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1); }

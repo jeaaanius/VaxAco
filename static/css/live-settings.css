@@ -1,0 +1,149 @@
+/*
+ * Live Setting
+ */
+.swin-transition, a#open-popup, #popup, #popup .color-setting li, #popup .color-setting a {
+  -ms-transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease; }
+
+a#open-popup {
+  position: fixed;
+  z-index: 10;
+  top: 130px;
+  right: 5px;
+  display: block;
+  color: #333;
+  width: 45px;
+  height: 45px;
+  font-size: 18px;
+  text-align: center;
+  line-height: 45px;
+  border-radius: 5px;
+  background-color: #fff;
+  cursor: pointer;
+  -webkit-box-shadow: -1px 1px 8px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: -1px 1px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: -1px 1px 8px rgba(0, 0, 0, 0.3); }
+
+#popup {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: fixed;
+  z-index: 10;
+  top: 130px;
+  margin-top: 50px;
+  right: -255px;
+  width: 255px;
+  height: 490px;
+  background-color: #FFF;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.15);
+  padding: 20px 0; }
+  #popup.showup {
+    right: 5px; }
+  #popup .bx-layout-img img {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #b5b1b1;
+    cursor: pointer;
+    border-radius: 50%; }
+  #popup .bx-layout-img.active img {
+    border: 2px solid #f15f2a; }
+  #popup .bx-layout-img:not(:last-child) {
+    margin-right: 15px; }
+  #popup .live-title {
+    font-family: "Rancho";
+    font-size: 28px;
+    color: #333;
+    margin: 0 20px;
+    padding: 0 0 15px;
+    border-bottom: 1px solid #ececec; }
+  #popup .popup-inner {
+    padding: 20px;
+    margin-bottom: 10px; }
+  #popup .box-setting {
+    padding: 0; }
+    #popup .box-setting p {
+      font-size: 12px;
+      color: #3c3c3c;
+      margin-bottom: 0; }
+    #popup .box-setting .text-small {
+      font-size: 10px;
+      color: #999;
+      margin-bottom: 15px; }
+  #popup .layout-setting a {
+    border: 1px solid #ececec;
+    display: inline-block;
+    cursor: pointer;
+    line-height: 30px;
+    padding: 0 20px;
+    color: #808080; }
+    #popup .layout-setting a:first-child {
+      margin-right: 15px; }
+    #popup .layout-setting a:hover {
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.3); }
+    #popup .layout-setting a.active {
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.3); }
+    #popup .layout-setting a.boxed {
+      background-color: black;
+      color: #fff; }
+  #popup .boxed-setting {
+    display: none; }
+    #popup .boxed-setting.open {
+      display: block; }
+  #popup .color-setting li {
+    border-bottom: 1px solid #ececec;
+    margin-bottom: 5px;
+    padding: 5px 0 8px;
+    cursor: pointer;
+    color: #808080; }
+    #popup .color-setting li:last-child {
+      padding-bottom: 0;
+      border-bottom: 0; }
+    #popup .color-setting li:hover {
+      color: #000; }
+      #popup .color-setting li:hover a {
+        border-radius: 5px; }
+    #popup .color-setting li.active a {
+      border-radius: 5px; }
+    #popup .color-setting li.colordefault a {
+      background-color: #f15f2a; }
+    #popup .color-setting li.color01 a {
+      background-color: #cc9f65; }
+    #popup .color-setting li.color02 a {
+      background-color: #a23b19; }
+    #popup .color-setting li.color03 a {
+      background-color: #6F4E37; }
+    #popup .color-setting li.color04 a {
+      background-color: #96b125; }
+    #popup .color-setting li.color05 a {
+      background-color: #ff84ae; }
+  #popup .color-setting a {
+    display: block;
+    float: right;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%; }
+
+@media screen and (min-width: 1024px) {
+  body.home-boxed {
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+    position: relative;
+    background-color: #fff;
+    -webkit-box-shadow: 0px 0px 5px #4B4B4B;
+    -moz-box-shadow: 0px 0px 5px #4B4B4B;
+    box-shadow: 0px 0px 5px #4B4B4B;
+    overflow: hidden;
+    background-attachment: fixed;
+    background-size: cover; } }
+
+.home-boxed .swin-sc-team-slider .prev-slide {
+  left: -20px; }
+
+.home-boxed .swin-sc-team-slider .next-slide {
+  right: -20px; }

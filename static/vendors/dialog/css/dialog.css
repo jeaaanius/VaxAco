@@ -1,0 +1,226 @@
+.dialog,
+.dialog__overlay {
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+
+.dialog {
+	position: fixed;
+	z-index: 100;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-align-items: center;
+	align-items: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	pointer-events: none;
+}
+
+.dialog__overlay {
+	position: absolute;
+	z-index: 1;
+	background: rgba(55, 58, 71, 0.9);
+	opacity: 0;
+	-webkit-transition: opacity 0.3s;
+	transition: opacity 0.3s;
+	-webkit-backface-visibility: hidden;
+}
+
+.dialog--open .dialog__overlay {
+	opacity: 1;
+	pointer-events: auto;
+}
+
+.dialog__content {
+	width: 50%;
+	max-width: 560px;
+	min-width: 290px;
+	background: #fff;
+	padding: 15px;
+	position: relative;
+	z-index: 5;
+	opacity: 0;
+	border-radius: 5px;
+}
+
+.dialog__content .modal-body {
+	max-height: 80vh;
+	overflow: auto;
+}
+
+.dialog--open .dialog__content {
+	pointer-events: auto;
+}
+
+.dialog__overlay {
+	-webkit-transition-duration: 0.3s;
+	transition-duration        : 0.3s;
+}
+
+.dialog.dialog--open .dialog__content,
+.dialog.dialog--close .dialog__content {
+	-webkit-animation-duration : 0.3s;
+	animation-duration         : 0.3s;
+	-webkit-animation-fill-mode: forwards;
+	animation-fill-mode        : forwards;
+}
+
+.dialog.dialog--open .dialog__content {
+	-webkit-animation-name: anim-open;
+	animation-name        : anim-open;
+}
+
+.dialog.dialog--close .dialog__content {
+	-webkit-animation-name: anim-close;
+	animation-name        : anim-close;
+}
+
+.toast {
+	position: fixed;
+	z-index: 20;
+	bottom: 15px;
+	left: 15px;
+	display: none;
+}
+
+.toast_content {
+	position     : relative;
+	z-index      : 5;
+	opacity      : 0;
+	border-radius: 5px;
+}
+
+.toast.toast--open,
+.toast.toast--close {
+	display: block;
+}
+
+.toast.toast--open .toast_content,
+.toast.toast--close .toast_content {
+	-webkit-animation-duration : 0.3s;
+	animation-duration         : 0.3s;
+	-webkit-animation-fill-mode: forwards;
+	animation-fill-mode        : forwards;
+}
+
+.toast.toast--open .toast_content {
+	-webkit-animation-name: anim-open;
+	animation-name        : anim-open;
+}
+
+.toast.toast--close .toast_content {
+	-webkit-animation-name: anim-close;
+	animation-name        : anim-close;
+}
+
+.toast_content .alert {
+	margin-bottom: 0;
+}
+
+.toast_content .alert .close {
+	margin-left: 20px;
+}
+
+[data-toggle="dialog"],
+[data-toggle="toast"] {
+	cursor: pointer;
+}
+
+@-webkit-keyframes anim-open {
+	0% {
+		opacity          : 0;
+		-webkit-transform: translate3d(0, 50px, 0);
+	}
+
+	100% {
+		opacity          : 1;
+		-webkit-transform: translate3d(0, 0, 0);
+	}
+}
+
+@keyframes anim-open {
+	0% {
+		opacity          : 0;
+		-webkit-transform: translate3d(0, 50px, 0);
+		transform        : translate3d(0, 50px, 0);
+	}
+
+	100% {
+		opacity          : 1;
+		-webkit-transform: translate3d(0, 0, 0);
+		transform        : translate3d(0, 0, 0);
+	}
+}
+
+@-webkit-keyframes anim-close {
+	0% {
+		opacity          : 1;
+		-webkit-transform: translate3d(0, 0, 0);
+	}
+
+	100% {
+		opacity          : 0;
+		-webkit-transform: translate3d(0, 50px, 0);
+	}
+}
+
+@keyframes anim-close {
+	0% {
+		opacity          : 1;
+		-webkit-transform: translate3d(0, 0, 0);
+		transform        : translate3d(0, 0, 0);
+	}
+
+	100% {
+		opacity          : 0;
+		-webkit-transform: translate3d(0, 50px, 0);
+		transform        : translate3d(0, 50px, 0);
+	}
+}
+
+/* Inner elements animations */
+
+@-webkit-keyframes anim-elem {
+	0% {
+		opacity          : 0;
+		-webkit-transform: translate3d(0, 25px, 0);
+	}
+
+	100% {
+		opacity          : 1;
+		-webkit-transform: translate3d(0, 0, 0);
+	}
+}
+
+@keyframes anim-elem {
+	0% {
+		opacity          : 0;
+		-webkit-transform: translate3d(0, 25px, 0);
+		transform        : translate3d(0, 25px, 0);
+	}
+
+	100% {
+		opacity          : 1;
+		-webkit-transform: translate3d(0, 0, 0);
+		transform        : translate3d(0, 0, 0);
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.dialog__content {
+		width: 90%;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	.dialog__content .modal-body {
+		max-height: 60vh;
+	}
+	.toast {
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
+}
