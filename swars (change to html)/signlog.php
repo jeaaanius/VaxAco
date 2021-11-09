@@ -40,13 +40,13 @@
     <div class="overlay-container">
         <div class="overlay">
             <div class="overlay-panel overlay-left">
-                <img src="./../static/pics/welcome.png" height="300" width="300" style="margin-top:-50px;">
+                <img src="./../static/pics/welcome_back.svg" height="300" width="300" style="margin-top:-50px;">
                 <h1 style="font-family:'Montserrat',sans-serif">Welcome Back!</h1>
                 <p style="font-family:'Montserrat',sans-serif">Log in to continue to your account.</p>
                 <button class="ghost" id="signIn">Sign In</button>
             </div>
             <div class="overlay-panel overlay-right">
-                <img src="./../static/pics/signin.png" height="300" width="300" style="margin-top:-50px;">
+                <img src="./../static/pics/sign_in.svg" height="300" width="300" style="margin-top:-50px;">
                 <h1 style="font-family:'Montserrat',sans-serif">Hello, Friend!</h1>
                 <p style="font-family:'Montserrat',sans-serif">Are you new? Create your account here!</p>
                 <button class="ghost" id="signUp">Sign Up</button>
