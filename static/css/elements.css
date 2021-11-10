@@ -2792,3 +2792,24 @@ footer {
   opacity: 1;
   -webkit-transform: scale(1);
   transform: scale(1); }
+
+#myBtn {
+  box-shadow:0 0 10px 0 rgb(0 0 0 / 20%);
+  position: fixed;
+  bottom: 40px;
+  right: 1.5%;
+  display: none;
+  z-index: 9;
+  background: #36D1DC;
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+  height: 47px;
+  width: 47px;
+  text-align: center;
+  transition: all 0.2s linear;
+  color:white;
+  font-size:20px;
+}
+#myBtn:hover {
+  background-color:#5B86E5;
+}

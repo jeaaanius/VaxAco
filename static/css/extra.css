@@ -49,6 +49,7 @@ section {
     position: absolute;
     bottom: 0; }
   .about-us-session p.des.font-bold {
+    font-family: 'Montserrat', sans-serif;
     font-size: 15px;
     color: #29272e;
     margin-bottom: 15px; }
