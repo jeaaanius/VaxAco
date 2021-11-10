@@ -42,11 +42,11 @@ function build_calendar($month, $year) {
     $calendar = "<table class='table table-bordered'>";
     echo '<a href="Navigation.php"><i style="color:black;font-size:30px;margin-left:-50px;padding-top:20px;" class="fa fa-arrow-left"></i></a>';
     $calendar .= "<center><h2 style='margin-top:-25px;font-weight:bold'>$monthName $year</h2>";
-    $calendar.= "<a style='position:static;margin-left:1px;margin-top:-80px;font-weight:bold;font-size:20px;padding-top:0;height:30px;width:30px;border:none;border-radius:50%;background-color:#f9b79f;color:white;' class='btn btn-xs btn-primary' href='?month=".date('m', mktime(0, 0, 0, $month-1, 1, $year))."&year=".date('Y', mktime(0, 0, 0, $month-1, 1, $year))."'>&#8249;</a> ";
+    $calendar.= "<a style='position:static;margin-left:1px;margin-top:-80px;font-weight:bold;font-size:20px;padding-top:0;height:30px;width:30px;border:none;border-radius:50%;background-color:#33ABCA;color:white;' class='btn btn-xs btn-primary' href='?month=".date('m', mktime(0, 0, 0, $month-1, 1, $year))."&year=".date('Y', mktime(0, 0, 0, $month-1, 1, $year))."'>&#8249;</a> ";
     
-    $calendar.= " <a style='margin-left:90px;padding: 5px 15px;border-radius:20px;border:none;background-color:#f9b79f' class='btn btn-xs btn-primary' href='?month=".date('m')."&year=".date('Y')."'>Current Month</a> ";
+    $calendar.= " <a style='margin-left:90px;padding: 5px 15px;border-radius:20px;border:none;background-color:#33ABCA' class='btn btn-xs btn-primary' href='?month=".date('m')."&year=".date('Y')."'>Current Month</a> ";
     
-    $calendar.= "<a style='position:static;margin-left:90px;margin-top:-80px;font-weight:bold;font-size:20px;padding-top:0;height:30px;width:30px;border:none;border-radius:50%;background-color:#f9b79f;color:white;' class='btn btn-xs btn-primary' href='?month=".date('m', mktime(0, 0, 0, $month+1, 1, $year))."&year=".date('Y', mktime(0, 0, 0, $month+1, 1, $year))."'>&#8250;</a></center><br>";
+    $calendar.= "<a style='position:static;margin-left:90px;margin-top:-80px;font-weight:bold;font-size:20px;padding-top:0;height:30px;width:30px;border:none;border-radius:50%;background-color:#33ABCA;color:white;' class='btn btn-xs btn-primary' href='?month=".date('m', mktime(0, 0, 0, $month+1, 1, $year))."&year=".date('Y', mktime(0, 0, 0, $month+1, 1, $year))."'>&#8250;</a></center><br>";
 
       $calendar .= "<tr>";
      // Create the calendar headers
@@ -168,7 +168,7 @@ function build_calendar($month, $year) {
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="calendar.css">
+    <link rel="stylesheet" href="./../static/css/calendar.css">
 </head>
 <style>
     .swal-icon img {
@@ -196,8 +196,6 @@ function build_calendar($month, $year) {
                     <button type="submit" name="reserve">Display Reservation</button>
                     </form>
                 </div>
-
-              
             </div>
         </div>
     </div>
@@ -243,7 +241,7 @@ function build_calendar($month, $year) {
                     }
                     else {
                         //if user has no reservation yet
-                        echo '<script type="text/javascript">swal("AWW", "You have no reservations yet!", "pics/aww.png");</script>';
+                        echo '<script type="text/javascript">swal("AWW", "You have no reservations yet!", "./../static/images/user/aww.png");</script>';
                     }
                 }
 

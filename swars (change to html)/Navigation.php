@@ -1,64 +1,50 @@
 <!DOCTYPE html>
-<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>S - WARS</title>
+
+    <title>VaxAco</title>
+
     <!-- Bootstrap CSS-->
-    <link href="assets/vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./../static/vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
     <!-- Font Awesome-->
-    <link rel="stylesheet" href="assets/vendors/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./../static/vendors/font-awesome/css/font-awesome.min.css">
+
     <!-- Vendors-->
-    <link rel="stylesheet" href="assets/vendors/flexslider/flexslider.min.css">
-    <link rel="stylesheet" href="assets/vendors/swipebox/css/swipebox.min.css">
-    <link rel="stylesheet" href="assets/vendors/slick/slick.min.css">
-    <link rel="stylesheet" href="assets/vendors/slick/slick-theme.min.css">
-    <link rel="stylesheet" href="assets/vendors/animate.min.css">
-    <link rel="stylesheet" href="assets/vendors/bootstrap-datepicker/css/bootstrap-datepicker.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/vendors/pageloading/css/component.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/vendors/pageloading/sidebartransition/css/component.css">
-    <link rel="stylesheet" href="assets/vendors/fullpage/jquery.fullpage.min.css">
+    <link rel="stylesheet" href="./../static/vendors/flexslider/flexslider.min.css">
+    <link rel="stylesheet" href="./../static/vendors/swipebox/css/swipebox.min.css">
+    <link rel="stylesheet" href="./../static/vendors/slick/slick.min.css">
+    <link rel="stylesheet" href="./../static/vendors/slick/slick-theme.min.css">
+    <link rel="stylesheet" href="./../static/vendors/animate.min.css">
+    <link rel="stylesheet" href="./../static/vendors/bootstrap-datepicker/css/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" type="text/css" href="./../static/vendors/pageloading/css/component.min.css">
+    <link rel="stylesheet" type="text/css" href="./../static/vendors/pageloading/sidebartransition/css/component.css">
+    <link rel="stylesheet" href="./../static/vendors/fullpage/jquery.fullpage.min.css">
+
     <!-- Font-icon-->
-    <link rel="stylesheet" href="assets/fonts/font-icon/style.css">
+    <link rel="stylesheet" href="./../static/fonts/font-icon/style.css">
+
     <!-- Style-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="assets/css/layout.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/elements.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/extra.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/widget.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
-    <!--link#colorpattern(rel='stylesheet', type='text/css', href='assets/css/color/colordefault.css')-->
+    <link rel="stylesheet" type="text/css" href="./../static/css/layout.css">
+    <link rel="stylesheet" type="text/css" href="./../static/css/elements.css">
+    <link rel="stylesheet" type="text/css" href="./../static/css/extra.css">
+    <link rel="stylesheet" type="text/css" href="./../static/css/widget.css">
+    <link rel="stylesheet" type="text/css" href="./../static/css/responsive.css">
+    <link rel="stylesheet" type='text/css' href="./../static/css/color/colordefault.css">
+    <!--link#colorpattern(rel='stylesheet', type='text/css', href='static/css/color/colordefault.css')-->
     <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700,700i" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Rancho" rel="stylesheet">
+
     <!-- Script Loading Page-->
-    <script src="assets/vendors/html5shiv.js"></script>
-    <script src="assets/vendors/respond.min.js"></script>
-    <script src="assets/vendors/pageloading/js/snap.svg-min.js"></script>
-    <script src="assets/vendors/pageloading/sidebartransition/js/modernizr.custom.js"></script>
-    <style>
-        #myBtn {
-            box-shadow:0 0 10px 0 rgb(0 0 0 / 20%);
-            position: fixed;
-            bottom: 40px;
-            right: 1.5%;
-            display: none;
-            z-index: 9;
-            background: #f15f2a;
-            border: 3px solid #ffffff;
-            border-radius: 50%;
-            height: 47px;
-            width: 47px;
-            text-align: center;
-            transition: all 0.2s linear;
-            color:white;
-            font-size:20px;
-        }
-        #myBtn:hover {
-            background-color:#ffbb99;
-        }
-    </style>
+    <script src="./../static/vendors/html5shiv.js"></script>
+    <script src="./../static/vendors/respond.min.js"></script>
+    <script src="./../static/vendors/pageloading/js/snap.svg-min.js"></script>
+    <script src="./../static/vendors/pageloading/sidebartransition/js/modernizr.custom.js"></script>
+
 </head>
 <body class="st-fullpage">
 <div id="st-container" class="st-container">
@@ -75,12 +61,12 @@
                         <div class="main-nav">
                             <ul id="main-nav" class="nav nav-pills">
                                 <li><?php include('notification.php') ?></li><br>
-                                <li class="dropdown current-menu-item"><a href="home-fullpage.php" class="dropdown-toggle">Home</a></li>
+                                <li class="dropdown current-menu-item"><a href="#" class="dropdown-toggle">Home</a></li>
                                 <li><a href="#overview">Overview</a></li>
                                 <li><a href="#reservation">Reservation</a></li>
-                                <li><a href="#menu">Menu</a></li>
-                                <li><a href="#ratings">Ratings and Review</a></li>
-                                <li><a href="#pricing">Pricing</a></li>
+                                <li><a href="#vaccines">Vaccines</a></li>
+                                <li><a href="#help">Help</a></li>
+                                <li><a href="#contact">Contact</a></li>
                                 <br><br>
                                 <li><button name="logout" style="background-color: transparent;
                 border-color:#d70040;"><a href="notification.php?logout='1'" onclick="return confirm('Are you sure you want to logout?')" style="color:#d70040">LOG OUT</a></button></li>
@@ -104,7 +90,7 @@
             </header>
             <div class="page-container">
                 <div id="fullpage">
-                    <div style="background-image: url('assets/images/slider/header-bg.jpg');
+                    <div style="background-image: url('./../static/images/pages/header-bg.jpg');
                                 background-attachment:fixed;
                                 background-position:center;
                                 background-size:cover;" class="section nav-light pdn">
@@ -113,8 +99,8 @@
                                 <div class="slide-content slide-layout-02 slide-style-02">
                                     <div class="container">
                                         <div class="slide-content-inner text-center">
-                                            <h3 data-ani-in="fadeInUp" data-ani-out="fadeOutDown" data-ani-delay="800" class="slide-title animated">S - WARS</h3>
-                                            <p data-ani-in="fadeInUp" data-ani-out="fadeOutDown" data-ani-delay="1200" class="slide-sub-title animated"><span class="line-before"></span><span class="line-after"></span><span class="text">Samgyupsalamat </span></p><img src="assets/images/slider/slider3-icon2.png" data-ani-in="fadeInUp" data-ani-out="fadeOutDown" data-ani-delay="1500" alt="fooday" class="img img-responsive slide-icon animated">
+                                            <h3 data-ani-in="fadeInUp" data-ani-out="fadeOutDown" data-ani-delay="800" class="slide-title animated">VaxAco</h3>
+                                            <p data-ani-in="fadeInUp" data-ani-out="fadeOutDown" data-ani-delay="1200" class="slide-sub-title animated"><span class="text">Fight against COVID-19 </span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -122,30 +108,25 @@
                         </div>
                     </div>
                     <div class="section">
-                        <section class="about-us-session" id="overview">
-                            <div class="page-container">
-                                <div class="page-content-wrapper">
-                                    <section id="about-us" class="about-us-session padding-top-100 padding-bottom-100">
-                                        <div class="container">
-                                            <div class="swin-sc swin-sc-title">
-                                                <p class="top-title"><span>Overview</span></p>
-                                                <h3 class="title">Introducing S - WARS </h3>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-md-6 colsm-12"><img src="assets/images/pages/meat.jpg" alt="" class="img img-responsive wow zoomIn"></div>
-                                                <div class="col-md-6 col-sm-12">
-                                                    <p class="des font-bold">Samgyeopsal - Web Application Reservation System (S-WARS)</p>
-                                                    <p class="des swin-margin-bottom-40">S-WARS is a web application that aims to provide a quick search and reservation services for craving of users for the well-known Korean style grill restaurant-samgyeopsal.
-                                                        This web application will only allow members with a 7 days prior reservation, while non-member can book their reservation for a duration of 24 hours.
-                                                        Upon signing up on the website, the user will apply for membership. From tons of samgyeopsal in the Philippines we chose the most common samgyeopsal; which is Samgyupsalamat. </p>
-                                                </div>
-                                            </div>
+                        <section class="about-us-session padding-top-100 padding-bottom-100" id="overview">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-6 colsm-12"><img src="./../static/images/pages/vaxaco.jpg" alt="" class="img img-responsive wow zoomIn"></div>
+                                    <div class="col-md-6 col-sm-12">
+                                        <div class="swin-sc swin-sc-title style-4 margin-bottom-20 margin-top-50">
+                                            <p class="top-title"><span>Overview</span></p>
+                                            <h3 class="title" style="font-size:70px">VaxAco</h3>
                                         </div>
+                                        <p class="des font-bold text-center">VaxAco (Vaccine Against Covid)</p>
+                                        <p class="des margin-bottom-20 text-center">VaxAco is an online web reservation system that enables the guests to book their reservations for their vaccination. Through the vaccination reservation system software, guests can choose their preferred date and time of vaccination. That way, they can complete the transaction quickly and efficiently from the comfort of their own home or office.</p>
+                                        <div class="swin-btn-wrap center"><a href="#" class="swin-btn center form-submit btn-transparent"> <span>	About Us</span></a></div>
+                                    </div>
                                 </div>
                             </div>
                         </section>
-                    </div>                              <!-- RESERVATION -->
-                    <div style="background-image: url('assets/images/background/samgyup2.jpg');
+                    </div>
+                    <!-- RESERVATION -->
+                    <div style="background-image: url('./../static/images/pages/reservation.jpg');
                                 background-attachment:fixed;
                                 background-position:center;
                                 background-size:cover;" class="section nav-light" id="reservation">
@@ -210,227 +191,502 @@
                                                         <form method="get">
                                                              <div class="swin-btn-wrap center"> <a href="calendar.php"> <span><button class="swin-btn center form-submit" type="submit" name="book_user">Book Table</button></span></a></div>
                                                         </form>
-                                                       
                                                     </div>                         
-                                                </form>             <!-- End of Reservation -->
+                                                </form>
+                                                <!-- End of Reservation -->
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-
                     </div>
+                    <br><br><br><br>
                     <div class="section">
-                        <section class="product-sesction-03"id="menu">
+                        <section class="product-sesction-03" id="vaccines">
                             <div class="container">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <div class="swin-sc swin-sc-title"><br><br><br>
-                                            <p class="top-title wow fadeInUp"><span>Top Quality Menu</span></p>
-                                            <h3 data-wow-delay="0.3s" class="title wow fadeInUp">Korean BBQ</h3>
+                                <div class="swin-sc swin-sc-title style-2">
+                                    <h3 class="title"><span>Vaccines</span></h3>
+                                </div>
+                                <div data-item="6" class="swin-sc swin-sc-timeline-2">
+                                    <div class="main-slider">
+                                        <div class="slides">
+                                            <div class="timeline-item item swin-transition">
+                                                <div class="timeline-item-wrap"><span class="timeline-year swin-transition">Pfizer</span></div><img src="./../static/images/vaccines/pfizer.jpg" alt="pfizer" class="img img-responsive">
+                                            </div>
+                                            <div class="timeline-item item swin-transition">
+                                                <div class="timeline-item-wrap"><span class="timeline-year swin-transition">AstraZeneca</span></div><img src="./../static/images/vaccines/astra.jpg" alt="astrazeneca" class="img img-responsive">
+                                            </div>
+                                            <div class="timeline-item item swin-transition">
+                                                <div class="timeline-item-wrap"><span class="timeline-year swin-transition">Sinovac</span></div><img src="./../static/images/vaccines/sinovac.jpg" alt="sinovac" class="img img-responsive">
+                                            </div>
+                                            <div class="timeline-item item swin-transition">
+                                                <div class="timeline-item-wrap"><span class="timeline-year swin-transition">Sputnik</span></div><img src="./../static/images/vaccines/sputnik.jpg" alt="sputnik" class="img img-responsive">
+                                            </div>
+                                            <div class="timeline-item item swin-transition">
+                                                <div class="timeline-item-wrap"><span class="timeline-year swin-transition">Janssen</span></div><img src="./../static/images/vaccines/janssen.jpg" alt="janssen" class="img img-responsive">
+                                            </div>
+                                            <div class="timeline-item item swin-transition">
+                                                <div class="timeline-item-wrap"><span class="timeline-year swin-transition">Bharat</span></div><img src="./../static/images/vaccines/bharat.jpg" alt="bharat" class="img img-responsive">
+                                            </div>
+                                            <div class="timeline-item item swin-transition">
+                                                <div class="timeline-item-wrap"><span class="timeline-year swin-transition">Moderna</span></div><img src="./../static/images/vaccines/moderna.jpg" alt="bharat" class="img img-responsive">
+                                            </div>
+                                            <div class="timeline-item item swin-transition">
+                                                <div class="timeline-item-wrap"><span class="timeline-year swin-transition">Novavax</span></div><img src="./../static/images/vaccines/novavax.jpg" alt="bharat" class="img img-responsive">
+                                            </div>
                                         </div>
-                                        <div data-wow-delay="0.6s" class="products-01 style-01 fadeInUp">
-                                            <div class="row" >
-                                                    <div class="cat-wrapper main-slider">
-                                                        <div class="item"><img src="assets/images/pages/menu 1.jpg"  alt="" class="img img-responsive"></div>
-                                                        <div class="item"><img src="assets/images/pages/menu 2.jpg"  alt="" class="img img-responsive"></div>
-                                                        <div class="item"><img src="assets/images/pages/menu 3.jpg"  alt="" class="img img-responsive"></div>
-                                                        <div class="item"><img src="assets/images/pages/menu 4.jpg"  alt="" class="img img-responsive"></div>
-                                                    </div>
-                                                    <div class="nav-slider">
-                                                    </div>
+                                    </div>
+                                    <div class="nav-slider">
+                                        <div class="slides">
+                                            <div class="timeline-content-item">
+                                                <p class="timeline-heading"><strong>Pfizer Biontech</strong></p>
+                                                <div class="timeline-content-detail">
+                                                    <table class="shop_table shop_table_responsive">
+                                                        <tbody>
+                                                        <tr class="cart_item">
+                                                            <td class="product-name">Technology Platform</td>
+                                                            <td class="product-quantity">mRNA</td>
+                                                        </tr>
+                                                        <tr class="cart_item">
+                                                            <td class="product-name">Philippine FDA EUA Approval</td>
+                                                            <td class="product-quantity">January 14, 2021 <br>
+                                                                May 31, 2021 (Expanded EUA to include 12-15 y/o)
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="cart_item">
+                                                            <td class="product-name">Age Group Covered by PH FDA EUA Approval</td>
+                                                            <td class="product-quantity">12 y/o and above</td>
+                                                        </tr>
+                                                        <tr class="cart_item">
+                                                            <td class="product-name">Dose and Frequency</td>
+                                                            <td class="product-quantity">2 doses, 21 days apart</td>
+                                                        </tr>
+                                                        <tr class="cart_item">
+                                                            <td class="product-name">Vaccine Efficacy Based on Phase III Clinical Trial (CT)</td>
+                                                            <td class="product-quantity">95% against symptomatic COVID-19 (CT done for 16 y/o and above) <br>
+                                                                100% against symptomatic COVID-19 (CT done for 12 to 15 y/o)
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="cart_item">
+                                                            <td class="product-name">Common Adverse Events Reported Observed in Phase III CT</td>
+                                                            <td class="product-quantity">short-term, mild-to-moderate pain at the injection site, fatigue, headache</td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <div class="timeline-content-item">
+                                                <p class="timeline-heading"><strong>Oxford AstraZeneca</strong></p>
+                                                <div class="timeline-content-detail">
+                                                    <table class="shop_table shop_table_responsive">
+                                                        <tbody>
+                                                        <tr class="cart_item">
+                                                            <td class="product-name">Technology Platform</td>
+                                                            <td class="product-quantity">Viral Vector (non-replicating)</td>
+                                                        </tr>
+                                                        <tr class="cart_item">
+                                                            <td class="product-name">Philippine FDA EUA Approval</td>
+                                                            <td class="product-quantity">January 28, 2021 </td>
+                                                        </tr>
+                                                        <tr class="cart_item">
+                                                            <td class="product-name">Age Group Covered by PH FDA EUA Approval</td>
+                                                            <td class="product-quantity">18 y/o and above</td>
+                                                        </tr>
+                                                        <tr class="cart_item">
+                                                            <td class="product-name">Dose and Frequency</td>
+                                                            <td class="product-quantity">2 doses, 4-12 weeks apart</td>
+                                                        </tr>
+                                                        <tr class="cart_item">
+                                                            <td class="product-name">Vaccine Efficacy Based on Phase III Clinical Trial (CT)</td>
+                                                            <td class="product-quantity">70.4% against symptomatic COVID-19 <br>
+                                                                100% against severe COVID-19100% against symptomatic COVID-19 (CT done for 12 to 15 y/o)
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="cart_item">
+                                                            <td class="product-name">Common Adverse Events Reported Observed in Phase III CT</td>
+                                                            <td class="product-quantity">injection site pain and tenderness, fatigue, headache, feverishness, myalgia</td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <div class="timeline-content-item">
+                                                <p class="timeline-heading"><strong>Sinovac CoronoVac</strong></p>
+                                                <div class="timeline-content-detail">
+                                                    <table class="shop_table shop_table_responsive">
+                                                        <tbody>
+                                                        <tr class="cart_item">
+                                                            <td class="product-name">Technology Platform</td>
+                                                            <td class="product-quantity">Inactivated Virus</td>
+                                                        </tr>
+                                                        <tr class="cart_item">
+                                                            <td class="product-name">Philippine FDA EUA Approval</td>
+                                                            <td class="product-quantity">February 22, 2021</td>
+                                                        </tr>
+                                                        <tr class="cart_item">
+                                                            <td class="product-name">Age Group Covered by PH FDA EUA Approval</td>
+                                                            <td class="product-quantity">18 y/o and above</td>
+                                                        </tr>
+                                                        <tr class="cart_item">
+                                                            <td class="product-name">Dose and Frequency</td>
+                                                            <td class="product-quantity">2 doses, 28 days apart</td>
+                                                        </tr>
+                                                        <tr class="cart_item">
+                                                            <td class="product-name">Vaccine Efficacy Based on Phase III Clinical Trial (CT)</td>
+                                                            <td class="product-quantity">51% overall VE against symptomatic COVID-19 <br>
+                                                                100% against severe COVID-19 and hospitalization
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="cart_item">
+                                                            <td class="product-name">Common Adverse Events Reported Observed in Phase III CT</td>
+                                                            <td class="product-quantity">local lymphadenopathy at the injection site, allergic reaction that may be cause by any component of the vaccine, convulsion (with or without fever)</td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <div class="timeline-content-item">
+                                                <p class="timeline-heading"><strong>Gamelaya Sputnik V</strong></p>
+                                                <div class="timeline-content-detail">
+                                                    <table class="shop_table shop_table_responsive">
+                                                        <tbody>
+                                                        <tr class="cart_item">
+                                                            <td class="product-name">Technology Platform</td>
+                                                            <td class="product-quantity">Viral Vector (non-replicating)</td>
+                                                        </tr>
+                                                        <tr class="cart_item">
+                                                            <td class="product-name">Philippine FDA EUA Approval</td>
+                                                            <td class="product-quantity">March 19, 2021 <br></td>
+                                                        </tr>
+                                                        <tr class="cart_item">
+                                                            <td class="product-name">Age Group Covered by PH FDA EUA Approval</td>
+                                                            <td class="product-quantity">18 y/o and above</td>
+                                                        </tr>
+                                                        <tr class="cart_item">
+                                                            <td class="product-name">Dose and Frequency</td>
+                                                            <td class="product-quantity">2 doses, 3 weeks apart</td>
+                                                        </tr>
+                                                        <tr class="cart_item">
+                                                            <td class="product-name">Vaccine Efficacy Based on Phase III Clinical Trial (CT)</td>
+                                                            <td class="product-quantity">91.6 against symptomatic COVID-19 <br>
+                                                                100% against moderate or severe cases
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="cart_item">
+                                                            <td class="product-name">Common Adverse Events Reported Observed in Phase III CT</td>
+                                                            <td class="product-quantity">pain on injection site, hyperthermia, swelling, headache, asthenia, muscle/joint pain, malaise, sore throat, diarrhea, rhinorrhea, loss of appetite, pain in the oropharynx, nasal congestion, colds, sneezing, cough</td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <div class="timeline-content-item">
+                                                <p class="timeline-heading"><strong>Janssen</strong></p>
+                                                <div class="timeline-content-detail">
+                                                    <table class="shop_table shop_table_responsive">
+                                                        <tbody>
+                                                        <tr class="cart_item">
+                                                            <td class="product-name">Technology Platform</td>
+                                                            <td class="product-quantity">Viral Vector (non-replicating)</td>
+                                                        </tr>
+                                                        <tr class="cart_item">
+                                                            <td class="product-name">Philippine FDA EUA Approval</td>
+                                                            <td class="product-quantity">April 19, 2021 <br></td>
+                                                        </tr>
+                                                        <tr class="cart_item">
+                                                            <td class="product-name">Age Group Covered by PH FDA EUA Approval</td>
+                                                            <td class="product-quantity">18 y/o and above</td>
+                                                        </tr>
+                                                        <tr class="cart_item">
+                                                            <td class="product-name">Dose and Frequency</td>
+                                                            <td class="product-quantity">1 dose</td>
+                                                        </tr>
+                                                        <tr class="cart_item">
+                                                            <td class="product-name">Vaccine Efficacy Based on Phase III Clinical Trial (CT)</td>
+                                                            <td class="product-quantity">66.1 – 66.9% against confirmed moderate to severe/critical COVID-19 <br>
+                                                                77% - 85% against severe COVID-19
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="cart_item">
+                                                            <td class="product-name">Common Adverse Events Reported Observed in Phase III CT</td>
+                                                            <td class="product-quantity">injection site pain, redness, swelling, tiredness, headache, muscle pain, chills, fever, nausea</td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <div class="timeline-content-item">
+                                                <p class="timeline-heading"><strong>Bharat BioTech</strong></p>
+                                                <div class="timeline-content-detail">
+                                                    <table class="shop_table shop_table_responsive">
+                                                        <tbody>
+                                                        <tr class="cart_item">
+                                                            <td class="product-name">Technology Platform</td>
+                                                            <td class="product-quantity">Inactivated Virus</td>
+                                                        </tr>
+                                                        <tr class="cart_item">
+                                                            <td class="product-name">Philippine FDA EUA Approval</td>
+                                                            <td class="product-quantity">April 19, 2021</td>
+                                                        </tr>
+                                                        <tr class="cart_item">
+                                                            <td class="product-name">Age Group Covered by PH FDA EUA Approval</td>
+                                                            <td class="product-quantity">18 y/o and above</td>
+                                                        </tr>
+                                                        <tr class="cart_item">
+                                                            <td class="product-name">Dose and Frequency</td>
+                                                            <td class="product-quantity">2 doses, 28 days apart</td>
+                                                        </tr>
+                                                        <tr class="cart_item">
+                                                            <td class="product-name">Vaccine Efficacy Based on Phase III Clinical Trial (CT)</td>
+                                                            <td class="product-quantity">80.6% against PCR-confirmed symptomatic COVID-19 <br></td>
+                                                        </tr>
+                                                        <tr class="cart_item">
+                                                            <td class="product-name">Common Adverse Events Reported Observed in Phase III CT</td>
+                                                            <td class="product-quantity">headache, fatigue, fever, body ache, abdominal pain, nausea, vomiting</td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <div class="timeline-content-item">
+                                                <p class="timeline-heading"><strong>Moderna</strong></p>
+                                                <div class="timeline-content-detail">
+                                                    <table class="shop_table shop_table_responsive">
+                                                        <tbody>
+                                                        <tr class="cart_item">
+                                                            <td class="product-name">Technology Platform</td>
+                                                            <td class="product-quantity">mrNA</td>
+                                                        </tr>
+                                                        <tr class="cart_item">
+                                                            <td class="product-name">Philippine FDA EUA Approval</td>
+                                                            <td class="product-quantity">May 5, 2021 <br></td>
+                                                        </tr>
+                                                        <tr class="cart_item">
+                                                            <td class="product-name">Age Group Covered by PH FDA EUA Approval</td>
+                                                            <td class="product-quantity">18 y/o and above</td>
+                                                        </tr>
+                                                        <tr class="cart_item">
+                                                            <td class="product-name">Dose and Frequency</td>
+                                                            <td class="product-quantity">2 doses, 28 days apart</td>
+                                                        </tr>
+                                                        <tr class="cart_item">
+                                                            <td class="product-name">Vaccine Efficacy Based on Phase III Clinical Trial (CT)</td>
+                                                            <td class="product-quantity">94.1% against symptomatic COVID-19 <br>
+                                                                100% against severe COVID-19
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="cart_item">
+                                                            <td class="product-name">Common Adverse Events Reported Observed in Phase III CT</td>
+                                                            <td class="product-quantity">pain/erythema/swelling on injection site, axillary lymphadenopathy, fever, headache, fatigue, myalgia, arthralgia, nausea, vomiting, chills</td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <div class="timeline-content-item">
+                                                <p class="timeline-heading"><strong>Novavax</strong></p>
+                                                <div class="timeline-content-detail">
+                                                    <table class="shop_table shop_table_responsive">
+                                                        <tbody>
+                                                        <tr class="cart_item">
+                                                            <td class="product-name">Technology Platform</td>
+                                                            <td class="product-quantity">Protein Subunit</td>
+                                                        </tr>
+                                                        <tr class="cart_item">
+                                                            <td class="product-name">Philippine FDA EUA Approval</td>
+                                                            <td class="product-quantity">N/A (No EUA application yet)</td>
+                                                        </tr>
+                                                        <tr class="cart_item">
+                                                            <td class="product-name">Age Group Covered by PH FDA EUA Approval</td>
+                                                            <td class="product-quantity">N/A (No EUA application yet)</td>
+                                                        </tr>
+                                                        <tr class="cart_item">
+                                                            <td class="product-name">Dose and Frequency</td>
+                                                            <td class="product-quantity">2 doses, 21 days apart</td>
+                                                        </tr>
+                                                        <tr class="cart_item">
+                                                            <td class="product-name">Vaccine Efficacy Based on Phase III Clinical Trial (CT)</td>
+                                                            <td class="product-quantity">awaiting official Phase III Interim Journal Publication</td>
+                                                        </tr>
+                                                        <tr class="cart_item">
+                                                            <td class="product-name">Common Adverse Events Reported Observed in Phase III CT</td>
+                                                            <td class="product-quantity">awaiting official Phase III Interim Journal Publication</td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <div class="timeline-content-item">
+                                                <p class="timeline-heading"><strong>Pfizer Biontech</strong></p>
+                                                <div class="timeline-content-detail">
+                                                    <table class="shop_table shop_table_responsive">
+                                                        <tbody>
+                                                        <tr class="cart_item">
+                                                            <td class="product-name">Technology Platform</td>
+                                                            <td class="product-quantity">mRNA</td>
+                                                        </tr>
+                                                        <tr class="cart_item">
+                                                            <td class="product-name">Philippine FDA EUA Approval</td>
+                                                            <td class="product-quantity">January 14, 2021 <br>
+                                                                May 31, 2021 (Expanded EUA to include 12-15 y/o)
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="cart_item">
+                                                            <td class="product-name">Age Group Covered by PH FDA EUA Approval</td>
+                                                            <td class="product-quantity">12 y/o and above</td>
+                                                        </tr>
+                                                        <tr class="cart_item">
+                                                            <td class="product-name">Dose and Frequency</td>
+                                                            <td class="product-quantity">2 doses, 21 days apart</td>
+                                                        </tr>
+                                                        <tr class="cart_item">
+                                                            <td class="product-name">Vaccine Efficacy Based on Phase III Clinical Trial (CT)</td>
+                                                            <td class="product-quantity">95% against symptomatic COVID-19 (CT done for 16 y/o and above) <br>
+                                                                100% against symptomatic COVID-19 (CT done for 12 to 15 y/o)
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="cart_item">
+                                                            <td class="product-name">Common Adverse Events Reported Observed in Phase III CT</td>
+                                                            <td class="product-quantity">short-term, mild-to-moderate pain at the injection site, fatigue, headache</td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+
                             </div>
                         </section>
                     </div>
-                    <div style="background-image: url('assets/images/pages/rating.jpg');
+                    <div style="background-color: #33ABCA;
                                 background-attachment:fixed;
                                 background-position:center;
-                                background-size:cover;" class="section nav-light">
-                        <section class="product-sesction-02 padding-top-120 padding-bottom-100" id="ratings">
+                                background-size:cover;" class="section">
+                        <section class="service-section-02 padding-top-100 padding-bottom-100" style="background-color:white">
                             <div class="container">
                                 <div class="swin-sc swin-sc-title">
-                                    <p class="top-title"><span>Ratings and Reviews</span></p>
-                                    <h3 style="color:white;filter:brightness(200%)" class="title">Customer Reviews</h3>
+                                    <p class="top-title"><span>Help</span></p>
+                                    <h3 class="title">How our System Works</h3>
                                 </div>
-                                <div class="swin-sc swin-sc-product products-02 carousel-02">
+                                <div class="swin-sc swin-sc-iconbox">
                                     <div class="row">
-                                        <div class="col-md-2"></div>
-                                        <div data-slide-toshow="5" class="cat-wrapper-02 main-slider col-md-8">
+                                        <div class="col-md-3 col-sm-6 col-xs-12">
+                                            <div class="item icon-box-02 wow fadeInUpShort">
+                                                <div class="wrapper-icon"><i class="icons fa fa-sign-in" style="color:#33ABCA"></i><span class="number">1</span></div>
+                                                <h4 class="title">Register and Login</h4>
+                                            </div>
                                         </div>
-                                        <div class="col-md-2"></div>
-                                    </div>
-                                    <div class="products nav-slider">
-                                        <div class="row slick-padding">
-                                            <div class="col-md-4 col-sm-6 col-xs-12 img img-responsive wow zoomIn">
-                                                <div style="background-color:white" class="blog-item item swin-transition">
-                                                    <div class="block-img"><br><p style="background-color:white;padding-left:10px; padding-right:10px; text-align:justify;font-style:italic">"Very budget friendly and lots of meat varieties. Friendly and attentive staff.
-                                                            It'a good to eat at especially for groups of 4 and above. Might just want to be there earlier because the waiting queue is long. But after the waiting, you'll know it's worth it."</p>
-                                                        <div class="block-circle price-wrapper"><span class="price woocommerce-Price-amount amount"><span class="price-symbol"></span>4.0</span></div>
-                                                    </div>
-                                                    <div style="background-color:white;box-shadow:0 0 10px 0 rgb(0 0 0 / 20%);" class="block-content">
-                                                        <div class="product-info">
-                                                            <ul class="list-inline">
-                                                                <li class="author"><span class="text">Ellie-Mae Orozco</span></li>
-                                                                <li class="rating"><a href="javascript:void(0)"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i></a></li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                        <div class="col-md-3 col-sm-6 col-xs-12">
+                                            <div data-wow-delay="0.5s" class="item icon-box-02 wow fadeInUpShort">
+                                                <div class="wrapper-icon"><i class="icons fa fa-ticket"></i><span class="number">2</span></div>
+                                                <h4 class="title">Make A Reservation</h4>
                                             </div>
-                                            <div class="col-md-4 col-sm-6 col-xs-12 img img-responsive wow zoomIn">
-                                                <div style="background-color:white" class="blog-item item swin-transition">
-                                                    <div class="block-img"><br><p style="background-color:white;padding-left:10px; padding-right:10px; text-align:justify;font-style:italic">"Service was great and speedy. The bulgogi is to die for! All side dishes were also tasty. The only downside is that they use bunch of charcoals (not environment-friendly) which has to be replaced every time the oils from the meat saturates it.
-                                                            Had to wait for almost an hour but it was worth waiting. There was no limit on the time and we stayed for at least 4 hours (i think), which is fine coz there were less customers as the store was about to close by the time we left."</p>
-                                                        <div class="block-circle price-wrapper"><span class="price woocommerce-Price-amount amount"><span class="price-symbol"></span>4.2</span></div>
-                                                    </div>
-                                                    <div style="background-color:white; box-shadow:0 0 10px 0 rgb(0 0 0 / 20%);" class="block-content">
-                                                        <div class="product-info">
-                                                            <ul class="list-inline">
-                                                                <li class="author"><span class="text">Ryan Aguirre</span></li>
-                                                                <li class="rating"><a href="javascript:void(0)"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-full"></i></a></li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                        </div>
+                                        <div class="col-md-3 col-sm-6 col-xs-12">
+                                            <div data-wow-delay="1s" class="item icon-box-02 wow fadeInUpShort">
+                                                <div class="wrapper-icon"><i class="icons fa fa-calendar"></i><span class="number">3</span></div>
+                                                <h4 class="title">Choose Date and Timer</h4>
                                             </div>
-                                            <div class="col-md-4 col-sm-6 col-xs-12 img img-responsive wow zoomIn">
-                                                <div style="background-color:white" class="blog-item item swin-transition">
-                                                    <div class="block-img"><br><p style="background-color:white;padding-left:10px; padding-right:10px; text-align:justify;font-style:italic">"Worth the wait. If you just walk in, better if you'll be there as early as their opening time so that you can secure a slot for lunch. My bf and I love the unli meat.
-                                                            Staff would assist you somehow though it really takes time to approach because of many customers they entertain. Nevertheless, our experience is good!"</p>
-                                                        <div class="block-circle price-wrapper"><span class="price woocommerce-Price-amount amount"><span class="price-symbol"></span>4.5</span></div>
-                                                    </div>
-                                                    <div style="background-color:white;box-shadow:0 0 10px 0 rgb(0 0 0 / 20%);" class="block-content">
-                                                        <div class="product-info">
-                                                            <ul class="list-inline">
-                                                                <li class="author"><span class="text">Stefano Silva</span></li>
-                                                                <li class="rating"><a href="javascript:void(0)"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i></a></li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-4 col-sm-6 col-xs-12 img img-responsive wow zoomIn">
-                                                <div style="background-color:white" class="blog-item item swin-transition">
-                                                    <div class="block-img"><br><p style="background-color:white;padding-left:10px; padding-right:10px; text-align:justify;font-style:italic">"well i love Korean cuisine the meat are great i love it! i love the ambiance here also. the only thing i didn't like was the service.
-                                                            well i hope next time they can accommodate their customers well. but still i will definitely be back here."</p>
-                                                        <div class="block-circle price-wrapper"><span class="price woocommerce-Price-amount amount"><span class="price-symbol"></span>3.7</span></div>
-                                                    </div>
-                                                    <div style="background-color:white;box-shadow:0 0 10px 0 rgb(0 0 0 / 20%);" class="block-content">
-                                                        <div class="product-info">
-                                                            <ul class="list-inline">
-                                                                <li class="author"><span class="text">Jay-Jay Campos</span></li>
-                                                                <li class="rating"><a href="javascript:void(0)"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star-o"></i></a></li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-4 col-sm-6 col-xs-12 img img-responsive wow zoomIn">
-                                                <div style="background-color:white" class="blog-item item swin-transition">
-                                                    <div class="block-img"><br><p style="background-color:white;padding-left:10px; padding-right:10px; text-align:justify;font-style:italic">"I ate here together with some friends and we decided to get the Unlimited 2 option wherein we can have both Pork and Beef. The meats are thick and does not burn easily.
-                                                            Also, the charcoal grill is better now. The side dishes are generous in serving."</p>
-                                                        <div class="block-circle price-wrapper"><span class="price woocommerce-Price-amount amount"><span class="price-symbol"></span>4.4</span></div>
-                                                    </div>
-                                                    <div style="background-color:white;box-shadow:0 0 10px 0 rgb(0 0 0 / 20%);" class="block-content">
-                                                        <div class="product-info">
-                                                            <ul class="list-inline">
-                                                                <li class="author"><span class="text">Glenn Lee</span></li>
-                                                                <li class="rating"><a href="javascript:void(0)"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i></a></li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                        </div>
+                                        <div class="col-md-3 col-sm-6 col-xs-12">
+                                            <div data-wow-delay="1.5s" class="item icon-box-02 wow fadeInUpShort">
+                                                <div class="wrapper-icon"><i class="icons fa fa-hand-pointer-o"></i><span class="number">4</span></div>
+                                                <h4 class="title">Book Now!</h4>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+                            </div>
                         </section>
                     </div>
                     <div style="background-color:white;
                                 background-attachment:fixed;
                                 background-position:center;
                                 background-size:cover;" class="section pbn">
-                                <?php
-                                // $db = mysqli_connect('localhost', 'root', '', 'registration');
-                                // $res_username =$_SESSION['username']; ;
-                                // $memberhsip_query = "SELECT membership FROM users WHERE username='$res_username'";
-                                // $result = mysqli_query($db, $memberhsip_query);
-                                // $member = mysqli_fetch_assoc($result);
-                                    if($member['membership']=='member'){
-                                        $_SESSION['product'] = 'Basic Plan'; 
-                                        $_SESSION['price'] = 'P0 ';
-                                        $_SESSION['button'] = 'Cancel Membership';
-                                        $_SESSION['note'] = 'Reverting Membership to Basic Plan for '.$_SESSION['username'].'<br><br>Disregard Billing Address and Payment Information ';
-                                        $place1 = 'payment.php'; $place2 = '#';
-                                    }else{
-                                        $_SESSION['product'] = 'Member Plan'; 
-                                        $_SESSION['price'] = 'P50/month';
-                                        $_SESSION['button'] = 'Continue to Checkout';
-                                        $_SESSION['note'] = 'Availing Membership Plan for '.$_SESSION['username'];
-                                        $place1 = '#'; $place2 = 'payment.php';
-                                    }
-                                ?>
-                        <section class="blog-section-03 padding-top-100 padding-bottom-100" id="pricing">
+                        <section class="ct-info-section padding-top-100 padding-bottom-100" id="contact">
                             <div class="container">
-                                <div class="swin-sc swin-sc-title">
-                                    <p class="top-title"><span>Pricing</span></p>
-                                    <h3 class="title">Membership Plan</h3>
-                                </div>
-                                <div class="swin-sc swin-sc-blog-masonry">
-                                    <div class="grid">
-                                        <div class="grid-sizer col-md-1 col-sm-1 col-xs-1"></div>
-                                        <div class="grid-item col-md-6 col-sm-6 grid-item-ha">
-                                            <div class="blog-item img img-responsive wow zoomIn">
-                                                <div class="blog-info clearfix">
-                                                    <div class="blog-info-item blog-author">
-                                                        <h1 style="font-weight:bold; margin-left:150px;font-family:Poppins,sans-serif" class="blog-title">BASIC</h1>
-                                                    </div>
-                                                </div>
-                                                <div class="blog-featured-img"></div>
-                                                <h1 style="visibility:hidden" class="blog-title"><a href="#" class="swin-transition" >BASIC</a></h1>
-                                                <div class="blog-content"><br>
-                                                    <div class="blog-date"><h3>FREE</h3></div>
-                                                    <p style="text-align:center" class="blog-description">Reservation is made at least 24 hours in advance</p>
-                                                    <p style="text-align:center" class="blog-description">No Cancellation Refund</p>
-                                                    <p style="text-align:center" class="blog-description">✓ Reservation History</p>
-                                                    <p style="text-align:center" class="blog-description">Maximum of 1 active reservations</p>
-                                                    <p style="text-align:center" class="blog-description">Maximum of 3 guests per reservations</p>
-                                                    <br>
-                                                    <p style="font-size:8px;text-align:center" class="blog-description">*Full refunds will be issued for cancellations made at least 36 hour(s) before the reservation*</p>
-                                                    <p style="font-size:8px;text-align:center" class="blog-description">*Maximum number of guests includes the one who reserved.*</p>
-                                                    <br>
+                                <div class="row">
+                                    <div class="col-md-8 col-sm-12">
+                                        <div class="swin-sc swin-sc-title style-2 text-left">
+                                            <p class="title" style="font-size:40px"><span>Contact VaxAco</span></p>
+                                        </div>
+                                        <div class="reservation-form style-02">
+                                            <div class="swin-sc swin-sc-contact-form light mtl style-full">
+                                                <form>
                                                     <div class="form-group">
-                                                        <div class="swin-btn-wrap center"><a href=<?php echo $place1 ?> class="swin-btn center form-submit"> <span>GET PLAN</span></a></div>
+                                                        <div class="input-group">
+                                                            <div class="input-group-addon"><i class="fa fa-user"></i></div>
+                                                            <input type="text" placeholder="Username" class="form-control">
+                                                        </div>
                                                     </div>
-                                                </div>
+                                                    <div class="form-group">
+                                                        <div class="input-group">
+                                                            <div class="input-group-addon"><i class="fa fa-envelope"></i></div>
+                                                            <input type="text" placeholder="Email" class="form-control">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="input-group">
+                                                            <div class="input-group-addon">
+                                                                <div class="fa fa-phone"></div>
+                                                            </div>
+                                                            <input type="text" placeholder="Phone" class="form-control">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <textarea placeholder="Message" class="form-control"></textarea>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="swin-btn-wrap"><a href="#" class="swin-btn center form-submit"><span>Send</span></a></div>
+                                                    </div>
+                                                </form>
                                             </div>
                                         </div>
-                                        <div class="grid-item col-md-6 col-sm-6 grid-item-ha">
-                                            <div class="blog-item img img-responsive wow zoomIn">
-                                                <div class="blog-info clearfix">
-                                                    <div class="blog-info-item blog-author">
-                                                        <h1 style="font-weight:bold; margin-left:130px;font-family:Poppins,sans-serif" class="blog-title">MEMBERS</h1>
-                                                    </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="swin-sc swin-sc-title style-2 text-left">
+                                            <p class="title" style="font-size:40px"><span>Contact Info</span></p>
+                                        </div>
+                                        <div class="swin-sc swin-sc-contact">
+                                            <div class="media item">
+                                                <div class="media-left">
+                                                    <div class="wrapper-icon"><i class="icons fa fa-map-marker"></i></div>
                                                 </div>
-                                                <div class="blog-featured-img"></div>
-                                                <h1 style="visibility:hidden" class="blog-title"><a href="#" class="swin-transition">MEMBERS</a></h1>
-                                                <div class="blog-content"><br>
-                                                    <div class="blog-date"><h4>₱ 50 / MONTH</h4></div>
-                                                    <p style="text-align:center" class="blog-description">Reservation is made at least 7 day(s) in advance</p>
-                                                    <p style="text-align:center" class="blog-description">No Cancellation Refund</p>
-                                                    <p style="text-align:center" class="blog-description">✓ Reservation History</p>
-                                                    <p style="text-align:center" class="blog-description">Maximum of 5 active reservations</p>
-                                                    <p style="text-align:center" class="blog-description">Maximum of 5 guests per reservations</p>
-                                                    <br>
-                                                    <p style="font-size:8px;text-align:center" class="blog-description">*Full refunds will be issued for cancellations made at least 36 hour(s) before the reservation*</p>
-                                                    <p style="font-size:8px;text-align:center" class="blog-description">*Maximum number of guests includes the one who reserved.*</p>
-                                                    <br>
-                                                    <div class="form-group">
-                                                        <div class="swin-btn-wrap center"><a href=<?php echo $place2 ?> class="swin-btn center form-submit" name="member_pay"> <span>GET PLAN</span></a></div>
+                                                <div class="media-body">
+                                                    <h4 class="media-heading title">Address</h4>
+                                                    <div class="description">P. Paredes St, Sampaloc, Manila, 1015 Metro Manila</div>
+                                                </div>
+                                            </div>
+                                            <div class="media item">
+                                                <div class="media-left">
+                                                    <div class="wrapper-icon"><i class="icons fa fa-phone"></i></div>
+                                                </div>
+                                                <div class="media-body">
+                                                    <h4 class="media-heading title">Landline</h4>
+                                                    <div class="description">Within MM: 8123–4567</div>
+                                                    <div class="description">Outside MM: 02–8123–4567</div>
+                                                </div>
+                                            </div>
+                                            <div class="media item">
+                                                <div class="media-left">
+                                                    <div class="wrapper-icon"><i class="icons fa fa-mobile-phone"></i></div>
+                                                </div>
+                                                <div class="media-body">
+                                                    <h4 class="media-heading title">Mobile</h4>
+                                                    <div class="description">Local: (+63) 912 3456 7890</div>
+                                                    <div class="description">Overseas: +63–2–8123-4567</div>
+                                                </div>
+                                            </div>
+                                            <div class="media item">
+                                                <div class="media-left">
+                                                    <div class="wrapper-icon"><i class="icons fa fa-envelope"></i></div>
+                                                </div>
+                                                <div class="media-body">
+                                                    <h4 class="media-heading title">Mail</h4>
+                                                    <div class="description">
+                                                        <p>vaxaco@gmail.com</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -440,7 +696,7 @@
                             </div>
                         </section>
                     </div>
-                    <div style="background-image: url('assets/images/background/samgyup3.jpg');
+                    <div style="background-image: url('./../static/images/pages/footer.jpg');
                                 background-attachment:fixed;
                                 background-position:center;
                                 background-size:cover; class="section pbn nav-light">
@@ -448,131 +704,6 @@
                             <div class="footer-mains">
                                 <div class="container">
                                     <div class="row">
-                                        <div class="col-lg-4">
-                                            <div class="ft-fixed-area wow fadeInLeft">
-                                                <div class="reservation-box">
-                                                    <div class="reservation-wrap">
-                                                        <h3 class="res-title">Opening Hours</h3>
-                                                        <div class="res-date-time">
-                                                            <div class="res-date-time-item">
-                                                                <div class="res-date">
-                                                                    <div class="res-date-item">
-                                                                        <div class="res-date-text">
-                                                                            <p>Monday:</p>
-                                                                        </div>
-                                                                        <div class="res-date-dot">.......................................</div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="res-time">
-                                                                    <div class="res-time-item">
-                                                                        <p>9AM - 9PM</p>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="clearfix"></div>
-                                                            </div>
-                                                            <div class="res-date-time-item">
-                                                                <div class="res-date">
-                                                                    <div class="res-date-item">
-                                                                        <div class="res-date-text">
-                                                                            <p>Tuesday:</p>
-                                                                        </div>
-                                                                        <div class="res-date-dot">.......................................</div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="res-time">
-                                                                    <div class="res-time-item">
-                                                                        <p>9AM - 9PM</p>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="clearfix"></div>
-                                                            </div>
-                                                            <div class="res-date-time-item">
-                                                                <div class="res-date">
-                                                                    <div class="res-date-item">
-                                                                        <div class="res-date-text">
-                                                                            <p>Wednesday:</p>
-                                                                        </div>
-                                                                        <div class="res-date-dot">.......................................</div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="res-time">
-                                                                    <div class="res-time-item">
-                                                                        <p>9AM - 9PM</p>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="clearfix"></div>
-                                                            </div>
-                                                            <div class="res-date-time-item">
-                                                                <div class="res-date">
-                                                                    <div class="res-date-item">
-                                                                        <div class="res-date-text">
-                                                                            <p>Thursday:</p>
-                                                                        </div>
-                                                                        <div class="res-date-dot">.......................................</div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="res-time">
-                                                                    <div class="res-time-item">
-                                                                        <p>9AM - 9PM</p>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="clearfix"></div>
-                                                            </div>
-                                                            <div class="res-date-time-item">
-                                                                <div class="res-date">
-                                                                    <div class="res-date-item">
-                                                                        <div class="res-date-text">
-                                                                            <p>Friday:</p>
-                                                                        </div>
-                                                                        <div class="res-date-dot">.......................................</div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="res-time">
-                                                                    <div class="res-time-item">
-                                                                        <p>9AM - 9PM</p>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="clearfix"></div>
-                                                            </div>
-                                                            <div class="res-date-time-item">
-                                                                <div class="res-date">
-                                                                    <div class="res-date-item">
-                                                                        <div class="res-date-text">
-                                                                            <p>Saturday:</p>
-                                                                        </div>
-                                                                        <div class="res-date-dot">.......................................</div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="res-time">
-                                                                    <div class="res-time-item">
-                                                                        <p>9AM - 9PM</p>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="clearfix"></div>
-                                                            </div>
-                                                            <div class="res-date-time-item">
-                                                                <div class="res-date">
-                                                                    <div class="res-date-item">
-                                                                        <div class="res-date-text">
-                                                                            <p>Sunday:</p>
-                                                                        </div>
-                                                                        <div class="res-date-dot">.......................................</div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="res-time">
-                                                                    <div class="res-time-item">
-                                                                        <p>9AM - 9PM</p>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="clearfix"></div>
-                                                            </div>
-                                                        </div>
-                                                        <h3 class="res-title">Reservation Number</h3>
-                                                        <p class="res-number">123 - 4567</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
                                         <div class="col-lg-8">
                                             <div class="ft-widget-area">
                                                 <div class="ft-area1">
@@ -586,31 +717,8 @@
                                                             </ul>
                                                         </div>
                                                         <div class="wget-about-content">
-                                                            <p>The S-WARS web application aims to provide quick search and reservation services to fulfill the cravings of the user for the well-known Korean style grill restaurant—samgyeopsal.
-                                                                Summary access to the desired information is included in each marked area, ranging from: restaurant overview, menu, ratings and reviews, pricing, and the booking page.
-                                                                Fast tap to your cravings at S-WARS.</p>
-                                                        </div>
-                                                        <div class="about-contact-info clearfix">
-                                                            <div class="address-info">
-                                                                <div class="info-icon"><i class="fa fa-map-marker"></i></div>
-                                                                <div class="info-content">
-                                                                    <p>P. Paredes St, Sampaloc, Manila, 1015 Metro Manila </p>
-                                                                </div>
-                                                            </div>
-                                                            <div class="phone-info">
-                                                                <div class="info-icon"><i class="fa fa-mobile-phone"></i></div>
-                                                                <div class="info-content">
-                                                                    <p>(02) 8281 8888</p>
-                                                                    <p>(02) 1234 5678</p>
-                                                                </div>
-                                                            </div>
-                                                            <div class="email-info">
-                                                                <div class="info-icon"><i class="fa fa-envelope"></i></div>
-                                                                <div class="info-content">
-                                                                    <p>admin@swars.com</p>
-                                                                    <p>support@swars.com</p>
-                                                                </div>
-                                                            </div>
+                                                            <p style="text-align: center; font-style:italic;">If you have any questions or queries, a member of staff will always be happy to help.
+                                                                Feel free to contact us by telephone or email and we will be sure to get back to you as soon as possible.</p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -684,36 +792,36 @@
     document.addEventListener("scroll", scrollFunction)
 </script>
 <!-- jQuery-->
-<script src="assets/vendors/jquery-1.10.2.min.js"></script>
+<script src="./../static/vendors/jquery-1.10.2.min.js"></script>
 <!-- Bootstrap JavaScript-->
-<script src="assets/vendors/bootstrap/js/bootstrap.min.js"></script>
+<script src="./../static/vendors/bootstrap/js/bootstrap.min.js"></script>
 <!-- Vendors-->
-<script src="assets/vendors/flexslider/jquery.flexslider-min.js"></script>
-<script src="assets/vendors/swipebox/js/jquery.swipebox.min.js"></script>
-<script src="assets/vendors/slick/slick.min.js"></script>
-<script src="assets/vendors/isotope/isotope.pkgd.min.js"></script>
-<script src="assets/vendors/jquery-countTo/jquery.countTo.js"></script>
-<script src="assets/vendors/jquery-appear/jquery.appear.js"></script>
-<script src="assets/vendors/parallax/parallax.min.js"></script>
-<script src="assets/vendors/gmaps/gmaps.js"></script>
-<script src="assets/vendors/audiojs/audio.min.js"></script>
-<script src="assets/vendors/vide/jquery.vide.min.js"></script>
-<script src="assets/vendors/pageloading/js/svgLoader.js"></script>
-<script src="assets/vendors/pageloading/js/classie.js"></script>
-<script src="assets/vendors/pageloading/sidebartransition/js/sidebarEffects.js"></script>
-<script src="assets/vendors/pageloading/sidebartransition/js/classie1.js"></script>
-<script src="assets/vendors/wowjs/wow.min.js"></script>
-<script src="assets/vendors/skrollr.min.js"></script>
-<script src="assets/vendors/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
-<script src="assets/vendors/jquery-cookie/js.cookie.js"></script>
+<script src="./../static/vendors/flexslider/jquery.flexslider-min.js"></script>
+<script src="./../static/vendors/swipebox/js/jquery.swipebox.min.js"></script>
+<script src="./../static/vendors/slick/slick.min.js"></script>
+<script src="./../static/vendors/isotope/isotope.pkgd.min.js"></script>
+<script src="./../static/vendors/jquery-countTo/jquery.countTo.js"></script>
+<script src="./../static/vendors/jquery-appear/jquery.appear.js"></script>
+<script src="./../static/vendors/parallax/parallax.min.js"></script>
+<script src="./../static/vendors/gmaps/gmaps.js"></script>
+<script src="./../static/vendors/audiojs/audio.min.js"></script>
+<script src="./../static/vendors/vide/jquery.vide.min.js"></script>
+<script src="./../static/vendors/pageloading/js/svgLoader.js"></script>
+<script src="./../static/vendors/pageloading/js/classie.js"></script>
+<script src="./../static/vendors/pageloading/sidebartransition/js/sidebarEffects.js"></script>
+<script src="./../static/vendors/pageloading/sidebartransition/js/classie1.js"></script>
+<script src="./../static/vendors/wowjs/wow.min.js"></script>
+<script src="./../static/vendors/skrollr.min.js"></script>
+<script src="./../static/vendors/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+<script src="./../static/vendors/jquery-cookie/js.cookie.js"></script>
 <!-- Own script-->
-<script src="assets/js/layout.js"></script>
-<script src="assets/js/map.js"></script>
+<script src="./../static/js/layout.js"></script>
+<script src="./../static/js/map.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCdXpLSJ3Ibdu-Phs9QOvpqb9d1DtPf7wQ"></script>
-<script src="assets/js/elements.js"></script>
-<script src="assets/js/widget.js"></script>
-<script src="assets/vendors/fullpage/jquery.fullpage.min.js"></script>
-<script src="assets/vendors/fullpage/jquery.fullpage.extensions.min.js"></script>
-<script src="assets/js/fullpage.js"></script>
+<script src="./../static/js/elements.js"></script>
+<script src="./../static/js/widget.js"></script>
+<script src="./../static/vendors/fullpage/jquery.fullpage.min.js"></script>
+<script src="./../static/vendors/fullpage/jquery.fullpage.extensions.min.js"></script>
+<script src="./../static/js/fullpage.js"></script>
 </body>
 </html>
