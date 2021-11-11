@@ -207,13 +207,29 @@
                                             </div>
                                     </div>
                                     <div class="row slick-padding">
-                                        <div class="col-md-4 col-sm-6 col-xs-12">
                                             <div class="blog-item item swin-transition">
-
-
+                                                <div class="ft-fixed-area wow fadeInLeft">
+                                                    <div class="form-pos-01 form-dark-wrapper section-dark">
+                                                        <table class="shop_table shop_table_responsive">
+                                                            <thead>
+                                                            <tr class="cart_item">
+                                                                <th class="product-name">Date</th>
+                                                                <th class="product-name">Time</th>
+                                                                <th class="product-name">Name</th>
+                                                                <th class="product-name">Email</th>
+                                                                <th class="product-name">Age</th>
+                                                                <th class="product-name">Contact</th>
+                                                                <th class="product-name">Action</th>
+                                                            </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                            <!-- insert php script here -->
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
                                 </div>
                             </div>
                         </div>
