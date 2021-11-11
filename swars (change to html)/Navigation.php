@@ -36,7 +36,6 @@
     <link rel="stylesheet" type="text/css" href="./../static/css/widget.css">
     <link rel="stylesheet" type="text/css" href="./../static/css/responsive.css">
     <link rel="stylesheet" type='text/css' href="./../static/css/color/colordefault.css">
-    <!--link#colorpattern(rel='stylesheet', type='text/css', href='static/css/color/colordefault.css')-->
     <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700,700i" rel="stylesheet">
 
     <!-- Script Loading Page-->
@@ -587,7 +586,7 @@
                                         <div class="col-md-3 col-sm-6 col-xs-12">
                                             <div data-wow-delay="1s" class="item icon-box-02 wow fadeInUpShort">
                                                 <div class="wrapper-icon"><i class="icons fa fa-calendar"></i><span class="number">3</span></div>
-                                                <h4 class="title">Choose Date and Timer</h4>
+                                                <h4 class="title">Choose Date and Time</h4>
                                             </div>
                                         </div>
                                         <div class="col-md-3 col-sm-6 col-xs-12">
@@ -695,16 +694,14 @@
                                 </div>
                             </div>
                         </section>
-                    </div>
                     <div style="background-image: url('./../static/images/pages/footer.jpg');
                                 background-attachment:fixed;
                                 background-position:center;
-                                background-size:cover; class="section pbn nav-light">
+                                background-size:cover;">
                         <footer>
                             <div class="footer-mains">
                                 <div class="container">
                                     <div class="row">
-                                        <div class="col-lg-8">
                                             <div class="ft-widget-area">
                                                 <div class="ft-area1">
                                                     <div class="swin-wget swin-wget-about">
@@ -723,11 +720,11 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </div>
+                                    </>
                                 </div>
                             </div>
                         </footer>
+                    </div>
                     </div>
                 </div>
                 </div>
