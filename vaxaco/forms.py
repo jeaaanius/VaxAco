@@ -2,7 +2,7 @@ from flask_wtf import FlaskForm
 from wtforms import StringField, PasswordField, SubmitField
 from wtforms.validators import EqualTo, Email, DataRequired, ValidationError
 
-from vaxaco.models import users
+from vaxaco.models import users, bookings
 
 
 class RegisterForm(FlaskForm):
@@ -29,16 +29,33 @@ class LoginForm(FlaskForm):
     submit = SubmitField(label='LOG IN')
 
 
-# class BookForm(FlaskForm):
-#     name = StringField(validators=[DataRequired()])
-#     email = StringField(validators=[Email(), DataRequired()])
-#     # phone = (validators=)
-#     submit = SubmitField(label='BOOK TABLE')
+class BookForm(FlaskForm):
+    def validate_booking(self, date_to_check, timeslot_to_check):
+        booking_date = bookings.query.filter_by(date=date_to_check.data).first()
+        booking_time = bookings.query.filter_by(timeslot=timeslot_to_check.data).first()
+        if booking_date and booking_time:
+            raise ValidationError('Reservation already exists')
 
-    # date = db.Column(db.Date(), nullable=False)
-    # name = db.Column(db.String(length=255), nullable=False)
-    # timeslot = db.Column(db.String(length=255), nullable=False)
-    # email = db.Column(db.String(length=255), nullable=False)
-    # guest = db.Column(db.Integer(), nullable=False)
-    # contact = db.Column(db.String(length=255), nullable=False)
-    # account = db.Column(db.String(length=255), nullable=False)
+    date = StringField(render_kw={'type': 'date', 'min': "2021-11-12", 'max': "2021-12-12"}, validators=[DataRequired()])
+    name = StringField(render_kw={'readonly': True}, validators=[DataRequired()])
+    timeslot = StringField(render_kw={'type': "time", 'min': '08:00', 'max': '17:00', 'step': '600'}, validators=[DataRequired()])
+    email = StringField(render_kw={'readonly': True}, validators=[Email(), DataRequired()])
+    contact = StringField(render_kw={'pattern': "[0-9]{4}[0-9]{3}[0-9]{4}"}, validators=[DataRequired()])
+    age = StringField(render_kw={'type': 'number','min': "18", 'max': '100'}, validators=[DataRequired()])
+    submit = SubmitField(label='BOOK NOW')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
