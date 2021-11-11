@@ -30,14 +30,15 @@ class users(db.Model, UserMixin):
 
 class bookings(db.Model):
 	id = db.Column(db.Integer(), primary_key=True)
-	date = db.Column(db.Date(), nullable=False)
-	name = db.Column(db.String(length=255), nullable=False)
+	date = db.Column(db.String(), nullable=False)
 	timeslot = db.Column(db.String(length=255), nullable=False)
+	name = db.Column(db.String(length=255), nullable=False)
 	email = db.Column(db.String(length=255), nullable=False)
-	guest = db.Column(db.Integer(), nullable=False)
+	age = db.Column(db.Integer(), nullable=False)
 	contact = db.Column(db.String(length=255), nullable=False)
-	account = db.Column(db.String(length=255), nullable=False)
 	owner = db.Column(db.Integer(), db.ForeignKey('users.id'))
+
+
 
 	def __repr__(self):
 		return f'bookings {self.name}'

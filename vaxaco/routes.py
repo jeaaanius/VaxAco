@@ -1,25 +1,27 @@
 
 from vaxaco import app
 from flask import render_template, redirect, url_for, flash
-from vaxaco.forms import RegisterForm, LoginForm
-from vaxaco.models import users
+from vaxaco.forms import RegisterForm, LoginForm, BookForm
+from vaxaco.models import users, bookings
 from vaxaco import db
 from flask_login import login_user, logout_user, login_required
 
-@app.route("/")
-def navigation_page():
-	return render_template('Navigation.html')
 
-@app.route("/calendar")
-def calendar_page():
-	return render_template('calendar.html')
-#
-# @app.route("/reservation", methods=['GET', 'POST'])
-# def book_page():
-# 	book_form = BookForm()
-# 	if book_form.validate_on_submit():
-# 		return render_template('calendar.html')
-# 		# book_form.name =
+@app.route("/", methods=['GET', 'POST'])
+# @login_required
+def navigation_page():
+	reserve = bookings.query.all()
+	book_form = BookForm()
+	if book_form.validate_on_submit():
+		booking_to_create = bookings(date=book_form.date.data,
+									 timeslot=book_form.timeslot.data,
+									 name=book_form.name.data,
+									 email=book_form.email.data,
+									 age=book_form.age.data,
+									 contact=book_form.contact.data)
+		db.session.add(booking_to_create)
+		db.session.commit()
+	return render_template('Navigation.html', book_form=BookForm(), reserve=reserve)
 
 
 @app.route("/login", methods=['GET', 'POST'])
@@ -44,6 +46,7 @@ def login():
 		login_user(user_to_create)
 		flash(f'Successfully created', category='success')
 		return redirect(url_for('navigation_page'))
+
 	if reg_form.errors != {}:
 		for err_msg in reg_form.errors.values():
 			flash(f'There was an error: {err_msg}', category='danger')
