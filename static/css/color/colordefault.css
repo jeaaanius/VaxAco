@@ -2071,19 +2071,19 @@ blockquote {
         transition: all .3s ease;
         border-radius: 50%; }
       .swin-sc-product .cat-wrapper-02 .item .cat-icons:hover .icons {
-        border-color: #33ABCA;
-        color: #33ABCA; }
+        border-color: #36D1DC;
+        color: #36D1DC; }
     .swin-sc-product .cat-wrapper-02 .item .cat-image {
       width: 150px;
       margin: 0 auto; }
     .swin-sc-product .cat-wrapper-02 .item .cat-title {
       font-size: 16px;
       text-transform: capitalize;
-      color: #29272e;
+      color: #FFFFFF;
       text-align: center; }
     .swin-sc-product .cat-wrapper-02 .item.slick-current .cat-icons .icons {
-      border-color: #33ABCA;
-      color: #33ABCA; }
+      border-color: #FFFFFF;
+      color: #FFFFFF; }
   .swin-sc-product .cat-wrapper-02 .item.slick-active + .slick-active.item:after {
     content: '';
     height: 2px;
