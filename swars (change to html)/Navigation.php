@@ -124,80 +124,100 @@
                             </div>
                         </section>
                     </div>
-                    <!-- RESERVATION -->
                     <div style="background-image: url('./../static/images/pages/reservation.jpg');
                                 background-attachment:fixed;
                                 background-position:center;
                                 background-size:cover;" class="section nav-light" id="reservation">
-                            <div class="container">
+                    <section class="product-sesction-02 padding-top-120 padding-bottom-100">
+                        <div class="container">
+                            <div class="swin-sc swin-sc-product products-02 carousel-02">
                                 <div class="row">
-                                    <div class="col-md-7 ft-fixed-area wow fadeInLeft">
-                                        <div class="form-pos-01 form-dark-wrapper section-dark">
-                                            <div class="swin-sc swin-sc-title style-3 light">
-                                                <p class="title"><span>Make A Reservation</span></p>
-                                                <p class="subtitle">You can call us directly at <span class="text-default"> 123-4567</span></p>
+                                    <div class="col-md-2"></div>
+                                    <div data-slide-toshow="2" class="cat-wrapper-02 main-slider col-md-8">
+                                        <div class="item">
+                                            <div class="cat-icons"><i class="icons fa fa-book"></i>
+                                                <h5 class="cat-title">Make Reservation</h5>
                                             </div>
-                                            <div class="swin-sc swin-sc-contact-form dark mtl">
-                                                <form method="post" action="calendar.php">          <!-- Start of Reservation -->
-                                                    <div class="form-group">
-                                                        <div class="input-group">
-                                                            <div class="input-group-addon"><i class="fa fa-user"></i></div>
-                                                            <input type="textbox" id="username" name="username" value=<?php echo $_SESSION['username']?> readonly class="form-control">
-                                                        </div>
-                                                        <div class="input-group">
-                                                            <div class="input-group-addon"><i class="fa fa-envelope"></i></div>
-                                                            <input type="email" id="email" name="email" placeholder="Email" required="" class="form-control">
-                                                        </div>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <div class="input-group">
-                                                            <div class="input-group-addon">
-                                                                <div class="fa fa-phone"></div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="cat-icons"><i class="icons fa fa-eye"></i>
+                                                <h5 class="cat-title">View Reservation</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2"></div>
+                                </div>
+                                <div class="products nav-slider">
+                                    <div class="row slick-padding">
+                                            <div class="blog-item item swin-transition">
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="ft-fixed-area wow fadeInLeft">
+                                                            <div class="form-pos-01 form-dark-wrapper section-dark">
+                                                                <div class="swin-sc swin-sc-title style-3 light">
+                                                                    <p class="title" style="font-family:'Montserrat', sans-serif"><span>Make A Reservation</span></p>
+                                                                    <p class="subtitle">You can call us directly at <span class="text-default"> 123-4567</span></p>
+                                                                </div>
+                                                                <div class="swin-sc swin-sc-contact-form dark mtl">
+                                                                    <form method="post" action="#reservation">          <!-- Start of Reservation -->
+                                                                        <div class="form-group">
+                                                                            <div class="input-group">
+                                                                                <div class="input-group-addon"><i class="fa fa-user"></i></div>
+                                                                                <input type="textbox" id="username" name="username" value=<?php echo $_SESSION['username']?> readonly class="form-control">
+                                                                            </div>
+                                                                            <div class="input-group">
+                                                                                <div class="input-group-addon"><i class="fa fa-envelope"></i></div>
+                                                                                <input type="email" id="email" name="email" placeholder="Email" required="" class="form-control">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="form-group">
+                                                                            <div class="input-group">
+                                                                                <div class="input-group-addon">
+                                                                                    <div class="fa fa-phone"></div>
+                                                                                </div>
+                                                                                <input type="tel" id="phone" required="" placeholder="Phone" pattern="[0-9]{4}[0-9]{3}[0-9]{4}" name="phone" class="form-control">
+                                                                            </div>
+                                                                            <div class="input-group">
+                                                                                <div class="input-group-addon"><i class="fa fa-male"></i></div>
+                                                                                <input type="number" placeholder="Age" id="age" name="age" min="18" max="100" class="form-control"  required>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="form-group">
+                                                                            <div class="input-group">
+                                                                                <div class="input-group-addon"><i class="fa fa-calendar"></i></div>
+                                                                                <input type="text" id="date" required="" placeholder="Date" class="form-control datepicker">
+                                                                            </div>
+                                                                            <div class="input-group">
+                                                                                <div class="input-group-addon"><i class="fa fa-clock-o"></i></div>
+                                                                                <input type="time" id="time" required="" placeholder="Time" class="form-control">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="form-group">
+                                                                            <form method="get">
+                                                                                <div class="swin-btn-wrap center"> <a href="#reservation"> <span><button class="swin-btn center form-submit" type="submit" name="book_user">Book Now!</button></span></a></div>
+                                                                            </form>
+                                                                        </div>
+                                                                    </form>
+                                                                    <!-- End of Reservation -->
+                                                                </div>
                                                             </div>
-                                                            <input type="tel" id="phone" required="" placeholder="Phone" pattern="[0-9]{4}[0-9]{3}[0-9]{4}" name="phone" class="form-control">
-                                                        </div>
-                                                        <div class="input-group">
-                                                            <div class="input-group-addon"><i class="fa fa-male"></i></div>
-                                                            <form method="get">
-                                                                <select type="text" placeholder="People" id="people" name="people" class="form-control">
-                                                            </form>
-                                                            
-                                                            <?php 
-                                                                $db = mysqli_connect('localhost', 'root', '', 'registration');
-                                                                $res_username =$_SESSION['username'];
-                                                                $memberhsip_query = "SELECT membership FROM users WHERE username='$res_username'";
-                                                                $result = mysqli_query($db, $memberhsip_query);
-                                                                $member = mysqli_fetch_assoc($result);
-
-                                                                $option = ($member['membership'] == 'basic') ? 3 : 5;     
-                                                                for ($i = 1; $i <= $option; $i++) {
-                                                                    echo "<option>$i Person</option>";
-                                                                }
-                                                                
-                                                                // pa send sa session yung number of guest
-                                                                // tas email para di redundant yung inputs
-                                                                // then automatic idisplay na sya don sa modal field
-                                                                // nakaka lusot kasi yung number of guest.
-
-                                                                if(isset($_GET['book_user'])) {
-                                                                    $_SESSION['people'] = $_GET['people'];
-                                                                } 
-                                                            ?>
-                                                            </select>
                                                         </div>
                                                     </div>
-                                                    <div class="form-group">
-                                                        <form method="get">
-                                                             <div class="swin-btn-wrap center"> <a href="calendar.php"> <span><button class="swin-btn center form-submit" type="submit" name="book_user">Book Table</button></span></a></div>
-                                                        </form>
-                                                    </div>                         
-                                                </form>
-                                                <!-- End of Reservation -->
+                                                </div>
+                                            </div>
+                                    </div>
+                                    <div class="row slick-padding">
+                                        <div class="col-md-4 col-sm-6 col-xs-12">
+                                            <div class="blog-item item swin-transition">
+
+
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                    </section>
                     </div>
                     <br><br><br><br>
                     <div class="section">
@@ -562,7 +582,7 @@
                     <div style="background-color: #33ABCA;
                                 background-attachment:fixed;
                                 background-position:center;
-                                background-size:cover;" class="section">
+                                background-size:cover;" class="section" id="help">
                         <section class="service-section-02 padding-top-100 padding-bottom-100" style="background-color:white">
                             <div class="container">
                                 <div class="swin-sc swin-sc-title">

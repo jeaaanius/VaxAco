@@ -124,80 +124,100 @@
                             </div>
                         </section>
                     </div>
-                    <!-- RESERVATION -->
                     <div style="background-image: url('./../static/images/pages/reservation.jpg');
                                 background-attachment:fixed;
                                 background-position:center;
                                 background-size:cover;" class="section nav-light" id="reservation">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-7 ft-fixed-area wow fadeInLeft">
-                                    <div class="form-pos-01 form-dark-wrapper section-dark">
-                                        <div class="swin-sc swin-sc-title style-3 light">
-                                            <p class="title"><span>Make A Reservation</span></p>
-                                            <p class="subtitle">You can call us directly at <span class="text-default"> 123-4567</span></p>
+                        <section class="product-sesction-02 padding-top-120 padding-bottom-100">
+                            <div class="container">
+                                <div class="swin-sc swin-sc-product products-02 carousel-02">
+                                    <div class="row">
+                                        <div class="col-md-2"></div>
+                                        <div data-slide-toshow="2" class="cat-wrapper-02 main-slider col-md-8">
+                                            <div class="item">
+                                                <div class="cat-icons"><i class="icons fa fa-book"></i>
+                                                    <h5 class="cat-title">Make Reservation</h5>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="cat-icons"><i class="icons fa fa-eye"></i>
+                                                    <h5 class="cat-title">View Reservation</h5>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="swin-sc swin-sc-contact-form dark mtl">
-                                            <form method="post" action="calendar.php">          <!-- Start of Reservation -->
-                                                <div class="form-group">
-                                                    <div class="input-group">
-                                                        <div class="input-group-addon"><i class="fa fa-user"></i></div>
-                                                        <input type="textbox" id="username" name="username" value="" readonly class="form-control"> <!--<?php echo $_SESSION['username']?> -->
-                                                    </div>
-                                                    <div class="input-group">
-                                                        <div class="input-group-addon"><i class="fa fa-envelope"></i></div>
-                                                        <input type="email" id="email" name="email" placeholder="Email" required="" class="form-control">
-                                                    </div>
-                                                </div>
-                                                <div class="form-group">
-                                                    <div class="input-group">
-                                                        <div class="input-group-addon">
-                                                            <div class="fa fa-phone"></div>
+                                        <div class="col-md-2"></div>
+                                    </div>
+                                    <div class="products nav-slider">
+                                        <div class="row slick-padding">
+                                            <div class="blog-item item swin-transition">
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="ft-fixed-area wow fadeInLeft">
+                                                            <div class="form-pos-01 form-dark-wrapper section-dark">
+                                                                <div class="swin-sc swin-sc-title style-3 light">
+                                                                    <p class="title" style="font-family:'Montserrat', sans-serif"><span>Make A Reservation</span></p>
+                                                                    <p class="subtitle">You can call us directly at <span class="text-default"> 123-4567</span></p>
+                                                                </div>
+                                                                <div class="swin-sc swin-sc-contact-form dark mtl">
+                                                                    <form method="post" action="#reservation">          <!-- Start of Reservation -->
+                                                                        <div class="form-group">
+                                                                            <div class="input-group">
+                                                                                <div class="input-group-addon"><i class="fa fa-user"></i></div>
+                                                                                <input type="textbox" id="username" name="username" value="" readonly class="form-control"> <!--<?php echo $_SESSION['username']?>-->
+                                                                            </div>
+                                                                            <div class="input-group">
+                                                                                <div class="input-group-addon"><i class="fa fa-envelope"></i></div>
+                                                                                <input type="email" id="email" name="email" placeholder="Email" required="" class="form-control">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="form-group">
+                                                                            <div class="input-group">
+                                                                                <div class="input-group-addon">
+                                                                                    <div class="fa fa-phone"></div>
+                                                                                </div>
+                                                                                <input type="tel" id="phone" required="" placeholder="Phone" pattern="[0-9]{4}[0-9]{3}[0-9]{4}" name="phone" class="form-control">
+                                                                            </div>
+                                                                            <div class="input-group">
+                                                                                <div class="input-group-addon"><i class="fa fa-male"></i></div>
+                                                                                <input type="number" placeholder="Age" id="age" name="age" min="18" max="100" class="form-control"  required>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="form-group">
+                                                                            <div class="input-group">
+                                                                                <div class="input-group-addon"><i class="fa fa-calendar"></i></div>
+                                                                                <input type="text" id="date" required="" placeholder="Date" class="form-control datepicker">
+                                                                            </div>
+                                                                            <div class="input-group">
+                                                                                <div class="input-group-addon"><i class="fa fa-clock-o"></i></div>
+                                                                                <input type="time" id="time" required="" placeholder="Time" class="form-control">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="form-group">
+                                                                            <form method="get">
+                                                                                <div class="swin-btn-wrap center"> <a href="#reservation"> <span><button class="swin-btn center form-submit" type="submit" name="book_user">Book Now!</button></span></a></div>
+                                                                            </form>
+                                                                        </div>
+                                                                    </form>
+                                                                    <!-- End of Reservation -->
+                                                                </div>
+                                                            </div>
                                                         </div>
-                                                        <input type="tel" id="phone" required="" placeholder="Phone" pattern="[0-9]{4}[0-9]{3}[0-9]{4}" name="phone" class="form-control">
-                                                    </div>
-                                                    <div class="input-group">
-                                                        <div class="input-group-addon"><i class="fa fa-male"></i></div>
-                                                        <form method="get">
-                                                            <select type="text" placeholder="People" id="people" name="people" class="form-control">
-                                                        </form>
-
-                                                        <!--<?php
-                                                                $db = mysqli_connect('localhost', 'root', '', 'registration');
-                                                                $res_username =$_SESSION['username'];
-                                                                $memberhsip_query = "SELECT membership FROM users WHERE username='$res_username'";
-                                                                $result = mysqli_query($db, $memberhsip_query);
-                                                                $member = mysqli_fetch_assoc($result);
-
-                                                                $option = ($member['membership'] == 'basic') ? 3 : 5;
-                                                                for ($i = 1; $i <= $option; $i++) {
-                                                                    echo "<option>$i Person</option>";
-                                                        }
-
-                                                        // pa send sa session yung number of guest
-                                                        // tas email para di redundant yung inputs
-                                                        // then automatic idisplay na sya don sa modal field
-                                                        // nakaka lusot kasi yung number of guest.
-
-                                                        if(isset($_GET['book_user'])) {
-                                                        $_SESSION['people'] = $_GET['people'];
-                                                        }
-                                                        ?>-->
-                                                        </select>
                                                     </div>
                                                 </div>
-                                                <div class="form-group">
-                                                    <form method="get">
-                                                        <div class="swin-btn-wrap center"> <a href="calendar.php"> <span><button class="swin-btn center form-submit" type="submit" name="book_user">Book Table</button></span></a></div>
-                                                    </form>
+                                            </div>
+                                        </div>
+                                        <div class="row slick-padding">
+                                            <div class="col-md-4 col-sm-6 col-xs-12">
+                                                <div class="blog-item item swin-transition">
+
+
                                                 </div>
-                                            </form>
-                                            <!-- End of Reservation -->
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </section>
                     </div>
                     <br><br><br><br>
                     <div class="section">
@@ -562,7 +582,7 @@
                     <div style="background-color: #33ABCA;
                                 background-attachment:fixed;
                                 background-position:center;
-                                background-size:cover;" class="section">
+                                background-size:cover;" class="section" id="help">
                         <section class="service-section-02 padding-top-100 padding-bottom-100" style="background-color:white">
                             <div class="container">
                                 <div class="swin-sc swin-sc-title">
@@ -694,77 +714,77 @@
                                 </div>
                             </div>
                         </section>
-                    <div style="background-image: url('./../static/images/pages/footer.jpg');
+                        <div style="background-image: url('./../static/images/pages/footer.jpg');
                                 background-attachment:fixed;
                                 background-position:center;
                                 background-size:cover;">
-                    <footer>
-                        <div class="footer-mains">
-                            <div class="container">
-                                <div class="row">
-                                        <div class="ft-widget-area">
-                                            <div class="ft-area1">
-                                                <div class="swin-wget swin-wget-about">
-                                                    <div class="clearfix"><a class="wget-logo"></a>
-                                                        <ul class="socials socials-about list-unstyled list-inline">
-                                                            <li><a href="https://facebook.com"><i class="fa fa-facebook"></i></a></li>
-                                                            <li><a href="https://twitter.com"><i class="fa fa-twitter"></i></a></li>
-                                                            <li><a href="https://pinterest.com"><i class="fa fa-pinterest"></i></a></li>
-                                                            <li><a href="https://myaccount.google.com/"><i class="fa fa-google-plus"></i></a></li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="wget-about-content">
-                                                        <p style="text-align: center; font-style:italic;">If you have any questions or queries, a member of staff will always be happy to help.
-                                                            Feel free to contact us by telephone or email and we will be sure to get back to you as soon as possible.</p>
+                            <footer>
+                                <div class="footer-mains">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="ft-widget-area">
+                                                <div class="ft-area1">
+                                                    <div class="swin-wget swin-wget-about">
+                                                        <div class="clearfix"><a class="wget-logo"></a>
+                                                            <ul class="socials socials-about list-unstyled list-inline">
+                                                                <li><a href="https://facebook.com"><i class="fa fa-facebook"></i></a></li>
+                                                                <li><a href="https://twitter.com"><i class="fa fa-twitter"></i></a></li>
+                                                                <li><a href="https://pinterest.com"><i class="fa fa-pinterest"></i></a></li>
+                                                                <li><a href="https://myaccount.google.com/"><i class="fa fa-google-plus"></i></a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="wget-about-content">
+                                                            <p style="text-align: center; font-style:italic;">If you have any questions or queries, a member of staff will always be happy to help.
+                                                                Feel free to contact us by telephone or email and we will be sure to get back to you as soon as possible.</p>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </>
+                                    </div>
                                 </div>
-                            </div>
+                            </footer>
                         </div>
-                    </footer>
-                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div><a id="totop" href="#" class="animated"><i class="fa fa-angle-double-up"></i></a>
-</div>
-<div id="loader" data-opening="m -5,-5 0,70 90,0 0,-70 z m 5,35 c 0,0 15,20 40,0 25,-20 40,0 40,0 l 0,0 C 80,30 65,10 40,30 15,50 0,30 0,30 z" class="pageload-overlay">
-    <div class="loader-wrapper">
-        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewbox="0 0 80 60" preserveaspectratio="none">
-            <path d="m -5,-5 0,70 90,0 0,-70 z m 5,5 c 0,0 7.9843788,0 40,0 35,0 40,0 40,0 l 0,60 c 0,0 -3.944487,0 -40,0 -30,0 -40,0 -40,0 z"></path>
-        </svg>
-        <div class="sk-circle">
-            <div class="sk-circle1 sk-child"></div>
-            <div class="sk-circle2 sk-child"></div>
-            <div class="sk-circle3 sk-child"></div>
-            <div class="sk-circle4 sk-child"></div>
-            <div class="sk-circle5 sk-child"></div>
-            <div class="sk-circle6 sk-child"></div>
-            <div class="sk-circle7 sk-child"></div>
-            <div class="sk-circle8 sk-child"></div>
-            <div class="sk-circle9 sk-child"></div>
-            <div class="sk-circle10 sk-child"></div>
-            <div class="sk-circle11 sk-child"></div>
-            <div class="sk-circle12 sk-child"></div>
-        </div>
-        <div class="sk-circle sk-circle-out">
-            <div class="sk-circle1 sk-child"></div>
-            <div class="sk-circle2 sk-child"></div>
-            <div class="sk-circle3 sk-child"></div>
-            <div class="sk-circle4 sk-child"></div>
-            <div class="sk-circle5 sk-child"></div>
-            <div class="sk-circle6 sk-child"></div>
-            <div class="sk-circle7 sk-child"></div>
-            <div class="sk-circle8 sk-child"></div>
-            <div class="sk-circle9 sk-child"></div>
-            <div class="sk-circle10 sk-child"></div>
-            <div class="sk-circle11 sk-child"></div>
-            <div class="sk-circle12 sk-child"></div>
+        </div><a id="totop" href="#" class="animated"><i class="fa fa-angle-double-up"></i></a>
+    </div>
+    <div id="loader" data-opening="m -5,-5 0,70 90,0 0,-70 z m 5,35 c 0,0 15,20 40,0 25,-20 40,0 40,0 l 0,0 C 80,30 65,10 40,30 15,50 0,30 0,30 z" class="pageload-overlay">
+        <div class="loader-wrapper">
+            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewbox="0 0 80 60" preserveaspectratio="none">
+                <path d="m -5,-5 0,70 90,0 0,-70 z m 5,5 c 0,0 7.9843788,0 40,0 35,0 40,0 40,0 l 0,60 c 0,0 -3.944487,0 -40,0 -30,0 -40,0 -40,0 z"></path>
+            </svg>
+            <div class="sk-circle">
+                <div class="sk-circle1 sk-child"></div>
+                <div class="sk-circle2 sk-child"></div>
+                <div class="sk-circle3 sk-child"></div>
+                <div class="sk-circle4 sk-child"></div>
+                <div class="sk-circle5 sk-child"></div>
+                <div class="sk-circle6 sk-child"></div>
+                <div class="sk-circle7 sk-child"></div>
+                <div class="sk-circle8 sk-child"></div>
+                <div class="sk-circle9 sk-child"></div>
+                <div class="sk-circle10 sk-child"></div>
+                <div class="sk-circle11 sk-child"></div>
+                <div class="sk-circle12 sk-child"></div>
+            </div>
+            <div class="sk-circle sk-circle-out">
+                <div class="sk-circle1 sk-child"></div>
+                <div class="sk-circle2 sk-child"></div>
+                <div class="sk-circle3 sk-child"></div>
+                <div class="sk-circle4 sk-child"></div>
+                <div class="sk-circle5 sk-child"></div>
+                <div class="sk-circle6 sk-child"></div>
+                <div class="sk-circle7 sk-child"></div>
+                <div class="sk-circle8 sk-child"></div>
+                <div class="sk-circle9 sk-child"></div>
+                <div class="sk-circle10 sk-child"></div>
+                <div class="sk-circle11 sk-child"></div>
+                <div class="sk-circle12 sk-child"></div>
+            </div>
         </div>
     </div>
-</div>
 </div>
 </div>
 <button onclick="topFunction()" id="myBtn" title="Go to top" class="animated zoomIn" ">&#10514;</button>
