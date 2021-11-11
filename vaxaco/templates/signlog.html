@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login/SignUp</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles1.css') }}">
+</head>
+<body>
+<div class="sign">
+    <div class="container" id="container">
+    <div class="form-container sign-up-container">
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            {% for category, message in messages %}
+                <div class="alert alert-{{ category }}">
+                    <h4>{{ message }}</h4>
+                </div>
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
+        <form method="post" action="">
+            {{ reg_form.hidden_tag() }}
+            <h1 style="font-family:'Montserrat',sans-serif">Create Account</h1>
+            <br>
+
+            {{ reg_form.username(placeholder="Username") }}
+            {{ reg_form.email_address(placeholder="Email") }}
+            {{ reg_form.password1(placeholder="Password") }}
+            {{ reg_form.password2(placeholder="Confirm Password") }}
+            <br> <br>
+            {{ reg_form.submit() }}
+        </form>
+    </div>
+    <div class="form-container sign-in-container">
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            {% for category, message in messages %}
+                <div class="alert alert-{{ category }}">
+                    <h4>{{ message }}</h4>
+                </div>
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
+        <form method="post" action="">
+            {{ log_form.hidden_tag() }}
+            <h1 style="font-family:'Montserrat',sans-serif">Log In</h1>
+            <br>
+            {{ log_form.username(placeholder="Username") }}
+            {{ log_form.password(placeholder="Password") }}
+            <br> <br>
+            {{ log_form.submit() }}
+        </form>
+    </div>
+    <div class="overlay-container">
+        <div class="overlay">
+            <div class="overlay-panel overlay-left">
+                <img src="{{ url_for('static', filename='images/user/welcome_back.svg') }}" height="300" width="300" style="margin-top:-50px;">
+                <h1 style="font-family:'Montserrat',sans-serif">Welcome Back!</h1>
+                <p style="font-family:'Montserrat',sans-serif">Log in to continue to your account.</p>
+                <button class="ghost" id="signIn">Sign In</button>
+            </div>
+            <div class="overlay-panel overlay-right">
+                <img src="{{ url_for('static', filename='images/user/sign_in.svg') }}" height="300" width="300" style="margin-top:-50px;">
+                <h1 style="font-family:'Montserrat',sans-serif">Hello, Friend!</h1>
+                <p style="font-family:'Montserrat',sans-serif">Are you new? Create your account here!</p>
+                <button class="ghost" id="signUp">Sign Up</button>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    const signUpButton = document.getElementById('signUp');
+    const signInButton = document.getElementById('signIn');
+    const container = document.getElementById('container');
+
+    signUpButton.addEventListener('click', () => {
+        container.classList.add("right-panel-active");
+    });
+    signInButton.addEventListener('click', () => {
+        container.classList.remove("right-panel-active");
+    });
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
