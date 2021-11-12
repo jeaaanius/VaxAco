@@ -10,8 +10,9 @@ from flask_login import login_user, logout_user, login_required
 @app.route("/", methods=['GET', 'POST'])
 # @login_required
 def navigation_page():
-	reserve = bookings.query.all()
+
 	book_form = BookForm()
+	reserve = bookings.query.all()
 	if book_form.validate_on_submit():
 		booking_to_create = bookings(date=book_form.date.data,
 									 timeslot=book_form.timeslot.data,
@@ -19,6 +20,7 @@ def navigation_page():
 									 email=book_form.email.data,
 									 age=book_form.age.data,
 									 contact=book_form.contact.data)
+
 		db.session.add(booking_to_create)
 		db.session.commit()
 	return render_template('Navigation.html', book_form=BookForm(), reserve=reserve)
@@ -27,16 +29,16 @@ def navigation_page():
 @app.route("/login", methods=['GET', 'POST'])
 def login():
 	log_form = LoginForm()
+	reg_form = RegisterForm()
+
 	if log_form.validate_on_submit():
 		attempted_user = users.query.filter_by(username=log_form.username.data).first()
 		if attempted_user and attempted_user.check_password_correction(attempted_password=log_form.password.data):
 			login_user(attempted_user)
 			return redirect(url_for('navigation_page'))
-
 		else:
 			flash(f'Username and password do not match', category='danger')
 
-	reg_form = RegisterForm()
 	if reg_form.validate_on_submit():
 		user_to_create = users(username=reg_form.username.data,
 							   email=reg_form.email_address.data,
@@ -49,7 +51,7 @@ def login():
 
 	if reg_form.errors != {}:
 		for err_msg in reg_form.errors.values():
-			flash(f'There was an error: {err_msg}', category='danger')
+			flash(f'There was an error: {err_msg}', category='error')
 	return render_template("signlog.html", reg_form=reg_form, log_form=log_form)
 
 
