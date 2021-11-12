@@ -236,7 +236,16 @@
                                                                         </div>
                                                                         <div class="form-group">
                                                                             <form method="get">
-                                                                                <div class="swin-btn-wrap center"> <a href=""> <span><button class="swin-btn center form-submit" type="submit" name="book_user">{{ book_form.submit(class="swin-btn") }}</button></span></a></div>
+                                                                                <div class="swin-btn-wrap center">
+                                                                                    {% if current_user.is_authenticated %}
+                                                                                        <a href="" onerror="return alert('Reserve unsuccessfully')"> <span>
+                                                                                            <button class="swin-btn center form-submit" type="submit" name="book_user">
+                                                                                            {{ book_form.submit(class="swin-btn") }}
+                                                                                        </button></span></a>
+                                                                                    {% else %}
+                                                                                        <button name="login" class="swin-btn center form-submit" ><a href="{{ url_for('login')}}" >BOOK NOW</a></button>
+                                                                                    {% endif %}
+                                                                                </div>
                                                                             </form>
                                                                         </div>
                                                                     </form>
