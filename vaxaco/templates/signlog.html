@@ -11,7 +11,7 @@
     <div class="form-container sign-up-container">
     {% with messages = get_flashed_messages(with_categories=true) %}
         {% if messages %}
-            {% for  message in messages %}
+            {% for category, message in messages %}
                 <h4> {{ message }} </h4>
             {% endfor %}
         {% endif %}
@@ -31,7 +31,7 @@
     <div class="form-container sign-in-container">
     {% with messages = get_flashed_messages(with_categories=true) %}
         {% if messages %}
-            {% for  message in messages %}
+            {% for category, message in messages %}
 <!--                 <a return confirm('Are you sure you want to logout?')></a>-->
                 <div class="alert alert-{{ category }}">
                     <h4>{{ message }}</h4>
