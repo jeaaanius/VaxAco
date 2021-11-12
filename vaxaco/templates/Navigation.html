@@ -219,7 +219,7 @@
 <!--                                                                                    <input type="text" id="date" required="" placeholder="Date" class="form-control datepicker">-->
                                                                                     {{ book_form.date(placeholder="Date", class="form-control") }}
                                                                                 {% else %}
-                                                                                    <input type="text" placeholder="Date" readonly class="form-control datepicker">
+                                                                                    <input type="text" placeholder="Date" readonly class="form-control">
                                                                                 {% endif %}
 
                                                                             </div>
@@ -279,8 +279,8 @@
                                                                 {% for book in reserve %}
                                                                     <tr class="cart_item">
                                                                         <th class="product-name">{{ book.date }}</th>
-                                                                        <th class="product-name">{{ book.name }}</th>
                                                                         <th class="product-name">{{ book.timeslot }}</th>
+                                                                        <th class="product-name">{{ book.name }}</th>
                                                                         <th class="product-name">{{ book.email }}</th>
                                                                         <th class="product-name">{{ book.age }}</th>
                                                                         <th class="product-name">{{ book.contact }}</th>
